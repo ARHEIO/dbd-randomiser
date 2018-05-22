@@ -19,5 +19,9 @@
         "platform":"play",
         "url":"https://play.google.com/store/apps/details?id=au.com.auspost.android"
      }
-  ]
+  ],
+  "display": "standalone",
+  "start_url": "/",
+  "background_color": "#317EFB",
+  "theme_color": "#317EFB"
 }
