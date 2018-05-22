@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { ServiceWorkerModule, SwPush, SwUpdate } from '@angular/service-worker';
+// import { ServiceWorkerModule, SwPush, SwUpdate } from '@angular/service-worker';
 import { AppComponent, LogUpdateService } from './app.component';
 
 import { environment } from '../environments/environment';
@@ -13,11 +13,11 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
+    // ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
-    SwPush,
-    SwUpdate,
+    // SwPush,
+    // SwUpdate,
     LogUpdateService
   ],
   bootstrap: [AppComponent]
