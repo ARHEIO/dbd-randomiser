@@ -1,6 +1,8 @@
 {
   "name":"Australia Post",
   "short_name":"AusPost",
+  "theme_color": "#317EFB",
+  "prefer_related_applications":true,
   "icons":[
      {
         "src":"/assets/icon-192.png",
@@ -13,15 +15,10 @@
         "type":"image/png"
      }
   ],
-  "prefer_related_applications":true,
   "related_applications":[
      {
         "platform":"play",
         "url":"https://play.google.com/store/apps/details?id=au.com.auspost.android"
      }
-  ],
-  "display": "standalone",
-  "start_url": "/index.html",
-  "background_color": "#317EFB",
-  "theme_color": "#317EFB"
+  ]
 }
