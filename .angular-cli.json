@@ -10,9 +10,7 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "manifest.json",
-        "sw.js",
-        "sw-register.js"
+        "manifest.json"
       ],
       "index": "index.html",
       "main": "main.ts",
