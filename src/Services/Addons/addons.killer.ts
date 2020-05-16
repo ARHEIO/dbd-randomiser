@@ -1,6 +1,12 @@
 import { IRank } from "../Common/rank.model"
 
-export const theTrapper = [
+export interface IKillerAddon {
+  icon: string;
+  name: string;
+  rank: IRank;
+}
+
+const theTrapper: IKillerAddon[] = [
   { icon: `trapperSack.png`, name: `Trapper Sack`, rank: IRank.BROWN },
   { icon: `trapperGloves.png`, name: `Trapper Gloves`, rank: IRank.BROWN },
   { icon: `strongCoilSpring.png`, name: `Strong Coil Spring`, rank: IRank.BROWN },
@@ -23,7 +29,7 @@ export const theTrapper = [
   { icon: `bloodyCoil.png`, name: `Bloody Coil`, rank: IRank.IRIDESCANT },
 ]
 
-export const theHag = [
+const theHag: IKillerAddon[] = [
   { icon: `ropeNecklet.png`, name: `Rope Necklet`, rank: IRank.BROWN },
   { icon: `powderedEggshell.png`, name: `Powdered Eggshell`, rank: IRank.BROWN },
   { icon: `deadFlyMud.png`, name: `Dead Fly Mud`, rank: IRank.BROWN },
@@ -46,7 +52,7 @@ export const theHag = [
   { icon: `mintRag.png`, name: `Mint Rag`, rank: IRank.IRIDESCANT },
 ]
 
-export const theCannibal = [
+const theCannibal: IKillerAddon[] = [
   { icon: `vegetableOil.png`, name: `Vegetable Oil`, rank: IRank.BROWN },
   { icon: `sparkPlug.png`, name: `Spark Plug`, rank: IRank.BROWN },
   { icon: `chainsawFile.png`, name: `Chainsaw File`, rank: IRank.BROWN },
@@ -68,7 +74,7 @@ export const theCannibal = [
   { icon: `award-winningChilli.png`, name: `Award-winning Chilli`, rank: IRank.PURPLE },
 ]
 
-export const theDoctor = [
+const theDoctor: IKillerAddon[] = [
   { icon: `moldyElectrode.png`, name: `Mouldy Electrode`, rank: IRank.BROWN },
   { icon: `mapleKnight.png`, name: `Maple Knight`, rank: IRank.BROWN },
   { icon: `orderClassI.png`, name: `"Order" - Class I`, rank: IRank.BROWN },
@@ -91,7 +97,7 @@ export const theDoctor = [
   { icon: `iridescentKing.png`, name: `Iridescent King`, rank: IRank.IRIDESCANT },
 ]
 
-export const theHillbilly = [
+const theHillbilly: IKillerAddon[] = [
   { icon: `vegetableOil.png`, name: `Vegetable Oil`, rank: IRank.BROWN },
   { icon: `sparkPlug.png`, name: `Spark Plug`, rank: IRank.BROWN },
   { icon: `chainsawFile.png`, name: `Chainsaw File`, rank: IRank.BROWN },
@@ -113,7 +119,7 @@ export const theHillbilly = [
   { icon: `begrimedChains.png`, name: `Begrimed Chains`, rank: IRank.PURPLE },
 ]
 
-export const theNightmare = [
+const theNightmare: IKillerAddon[] = [
   { icon: `woolShirt.png`, name: `Wool Shirt`, rank: IRank.BROWN },
   { icon: `sheepBlock.png`, name: `Sheep Block`, rank: IRank.BROWN },
   { icon: `kidsDrawing.png`, name: `Kid's Drawing`, rank: IRank.BROWN },
@@ -136,7 +142,7 @@ export const theNightmare = [
   { icon: `blackBox.png`, name: `Black Box`, rank: IRank.IRIDESCANT },
 ]
 
-export const theShape = [
+const theShape: IKillerAddon[] = [
   { icon: `tackyEarrings.png`, name: `Tacky Earrings`, rank: IRank.BROWN },
   { icon: `boyfriendsMemo.png`, name: `Boyfriend's Memo`, rank: IRank.BROWN },
   { icon: `blondeHair.png`, name: `Blond Hair`, rank: IRank.BROWN },
@@ -159,7 +165,7 @@ export const theShape = [
   { icon: `fragrantTuftOfHair.png`, name: `Fragrant Tuft of Hair`, rank: IRank.IRIDESCANT },
 ]
 
-export const theLegion = [
+const theLegion: IKillerAddon[] = [
   { icon: `smileyFacePin.png`, name: `Smiley Face Pin`, rank: IRank.BROWN },
   { icon: `scratchedRuler.png`, name: `Scratched Ruler`, rank: IRank.BROWN },
   { icon: `mischiefList.png`, name: `Mischief List`, rank: IRank.BROWN },
@@ -182,7 +188,7 @@ export const theLegion = [
   { icon: `fumingMixTape.png`, name: `Fuming Mix Tape`, rank: IRank.IRIDESCANT },
 ]
 
-export const theHuntress = [
+const theHuntress: IKillerAddon[] = [
   { icon: `coarseStone.png`, name: `Coarse Stone`, rank: IRank.BROWN },
   { icon: `berusToxin.png`, name: `Berus Toxin`, rank: IRank.BROWN },
   { icon: `bandagedHaft.png`, name: `Bandaged Haft`, rank: IRank.BROWN },
@@ -205,7 +211,7 @@ export const theHuntress = [
   { icon: `iridescentHead.png`, name: `Iridescent Head`, rank: IRank.IRIDESCANT },
 ]
 
-export const thePig = [
+const thePig: IKillerAddon[] = [
   { icon: `workshopGrease.png`, name: `Workshop Grease`, rank: IRank.BROWN },
   { icon: `shatteredSyringe.png`, name: `Shattered Syringe`, rank: IRank.BROWN },
   { icon: `johnsMedicalFile.png`, name: `John's Medical File`, rank: IRank.BROWN },
@@ -228,7 +234,7 @@ export const thePig = [
   { icon: `amandasLetter.png`, name: `Amanda's Letter`, rank: IRank.IRIDESCANT },
 ]
 
-export const theGhostFace = [
+const theGhostFace: IKillerAddon[] = [
   { icon: `philly.png`, name: `"Philly"`, rank: IRank.BROWN },
   { icon: `walleyesMatchbook.png`, name: `Walleyes Matchbook`, rank: IRank.BROWN },
   { icon: `headlinesCutouts.png`, name: `Headlines Cut-outs`, rank: IRank.BROWN },
@@ -251,7 +257,7 @@ export const theGhostFace = [
   { icon: `outdoorSecurityCamera.png`, name: `Outdoor Security Camera`, rank: IRank.IRIDESCANT },
 ]
 
-export const theDemogorgon = [
+const theDemogorgon: IKillerAddon[] = [
   { icon: `rottenPumpkin.png`, name: `Rotten Pumpkin`, rank: IRank.BROWN },
   { icon: `blackHeart.png`, name: `Black Heart`, rank: IRank.BROWN },
   { icon: `ratLiver.png`, name: `Rat Liver`, rank: IRank.BROWN },
@@ -274,7 +280,7 @@ export const theDemogorgon = [
   { icon: `redMoss.png`, name: `Red Moss`, rank: IRank.IRIDESCANT },
 ]
 
-export const theNurse = [
+const theNurse: IKillerAddon[] = [
   { icon: `woodenHorse.png`, name: `Wooden Horse`, rank: IRank.BROWN },
   { icon: `whiteNitComb.png`, name: `White Nit Comb`, rank: IRank.BROWN },
   { icon: `plaidFlannel.png`, name: `Plaid Flannel`, rank: IRank.BROWN },
@@ -297,7 +303,7 @@ export const theNurse = [
   { icon: `matchbox.png`, name: `Matchbox`, rank: IRank.IRIDESCANT },
 ]
 
-export const theClown = [
+const theClown: IKillerAddon[] = [
   { icon: `smellyInnerSoles.png`, name: `Smelly Inner Soles`, rank: IRank.BROWN },
   { icon: `robinFeather.png`, name: `Robin Feather`, rank: IRank.BROWN },
   { icon: `fingerlessParadeGloves.png`, name: `Fingerless Parade Gloves`, rank: IRank.BROWN },
@@ -320,7 +326,7 @@ export const theClown = [
   { icon: `redheadsPinkyFinger.png`, name: `Redhead's Pinky Finger`, rank: IRank.IRIDESCANT },
 ]
 
-export const theDeathslinger = [
+const theDeathslinger: IKillerAddon[] = [
   { icon: `spitPolishRag.png`, name: `Spit Polish Rag`, rank: IRank.BROWN },
   { icon: `snakeOil.png`, name: `Snake Oil`, rank: IRank.BROWN },
   { icon: `ricketyChain.png`, name: `Rickety Chain`, rank: IRank.BROWN },
@@ -343,7 +349,7 @@ export const theDeathslinger = [
   { icon: `hellshireIron.png`, name: `Hellshire Iron`, rank: IRank.IRIDESCANT },
 ]
 
-export const thePlague = [
+const thePlague: IKillerAddon[] = [
   { icon: `prayerTabletFragment.png`, name: `Prayer Tablet Fragment`, rank: IRank.BROWN },
   { icon: `olibanumIncense.png`, name: `Olibanum Incense`, rank: IRank.BROWN },
   { icon: `limestoneSeal.png`, name: `Limestone Seal`, rank: IRank.BROWN },
@@ -366,7 +372,7 @@ export const thePlague = [
   { icon: `blackIncense.png`, name: `Black Incense`, rank: IRank.IRIDESCANT },
 ]
 
-export const theWraith = [
+const theWraith: IKillerAddon[] = [
   { icon: `theSerpent-Soot.png`, name: `"The Serpent" - Soot`, rank: IRank.BROWN },
   { icon: `theHound-Soot.png`, name: `"The Hound" - Soot`, rank: IRank.BROWN },
   { icon: `theGhost-Soot.png`, name: `"The Ghost" - Soot`, rank: IRank.BROWN },
@@ -389,7 +395,7 @@ export const theWraith = [
   { icon: `allSeeing-Spirit.png`, name: `"All Seeing" - Spirit`, rank: IRank.IRIDESCANT },
 ]
 
-export const theSpirit = [
+const theSpirit: IKillerAddon[] = [
   { icon: `zori.png`, name: `Zōri`, rank: IRank.BROWN },
   { icon: `shiawaseAmulet.png`, name: `Shiawase Amulet`, rank: IRank.BROWN },
   { icon: `origamiCrane.png`, name: `Origami Crane`, rank: IRank.BROWN },
@@ -412,7 +418,7 @@ export const theSpirit = [
   { icon: `fathersGlasses.png`, name: `Father's Glasses`, rank: IRank.IRIDESCANT },
 ]
 
-export const theOni = [
+const theOni: IKillerAddon[] = [
   { icon: `yakuyokeTalisman.png`, name: `Yakuyoke Talisman`, rank: IRank.BROWN },
   { icon: `rottingRope.png`, name: `Rotting Rope`, rank: IRank.BROWN },
   { icon: `crackedSakazuki.png`, name: `Cracked Sakazuki`, rank: IRank.BROWN },
@@ -434,3 +440,27 @@ export const theOni = [
   { icon: `renjirosBloodyGlove.png`, name: `Renjiro's Bloody Glove`, rank: IRank.IRIDESCANT },
   { icon: `iridescentFamilyCrest.png`, name: `Iridescent Family Crest`, rank: IRank.IRIDESCANT }
 ]
+
+
+
+export const killerAddons = {
+  'theTrapper': theTrapper,
+  'theHag': theHag,
+  'theCannibal': theCannibal,
+  'theDoctor': theDoctor,
+  'theHillbilly': theHillbilly,
+  'theNightmare': theNightmare,
+  'theShape': theShape,
+  'theLegion': theLegion,
+  'theHuntress': theHuntress,
+  'thePig': thePig,
+  'theGhostFace': theGhostFace,
+  'theDemogorgon': theDemogorgon,
+  'theNurse': theNurse,
+  'theClown': theClown,
+  'theDeathslinger': theDeathslinger,
+  'thePlague': thePlague,
+  'theWraith': theWraith,
+  'theSpirit': theSpirit,
+  'theOni': theOni
+}

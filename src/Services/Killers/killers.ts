@@ -1,4 +1,8 @@
-export const killers = [
+export interface IKiller {
+  name: string;
+  link: string;
+}
+export const killers: IKiller[] = [
   { name: `The Trapper`, link: `theTrapper` },
   { name: `The Hag`, link: `theHag` },
   { name: `The Cannibal`, link: `theCannibal` },

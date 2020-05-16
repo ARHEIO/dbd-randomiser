@@ -6,32 +6,38 @@ export const survivorItems: IGameObject[] = [
   {
     name: `All Hallows' Eve Lunchbox`,
     rank: IRank.GOLD,
-    icon: null
+    icon: null,
+    link: 'medkit'
   },
   {
     name: `Chinese Firecracker`,
     rank: IRank.GOLD,
-    icon: null
+    icon: null,
+    link: 'firecracker'
   },
   {
     name: `Third Year Party Starter`,
     rank: IRank.GOLD,
-    icon: null
+    icon: null,
+    link: 'firecracker'
   },
   {
     name: `Will O' Wisp`,
     rank: IRank.GOLD,
-    icon: null
+    icon: null,
+    link: 'flashlight'
   },
   {
     name: `Winter Party Starter`,
     rank: IRank.GOLD,
-    icon: null
+    icon: null,
+    link: 'firecracker'
   },
   {
     name: `Rainbow Map`,
     rank: IRank.IRIDESCANT,
-    icon: null
+    icon: null,
+    link: 'map'
   },
   {
     name: `Skeleton Key`,
@@ -49,9 +55,10 @@ export const survivorItems: IGameObject[] = [
     icon: null
   },
   {
-    name: `Ranger Med - Kit`,
+    name: `Ranger Med-Kit`,
     rank: IRank.PURPLE,
-    icon: null
+    icon: null,
+    link: 'medkit'
   },
   {
     name: `Engineer's Toolbox`,
@@ -61,7 +68,8 @@ export const survivorItems: IGameObject[] = [
   {
     name: `Utility Flashlight`,
     rank: IRank.PURPLE,
-    icon: null
+    icon: null,
+    link: 'flashlight'
   },
   {
     name: `Broken Key`,
@@ -74,14 +82,16 @@ export const survivorItems: IGameObject[] = [
     icon: null
   },
   {
-    name: `Emergency Med - Kit`,
+    name: `Emergency Med-Kit`,
     rank: IRank.GREEN,
-    icon: null
+    icon: null,
+    link: 'medkit'
   },
   {
     name: `Map`,
     rank: IRank.GREEN,
-    icon: null
+    icon: null,
+    link: 'map'
   },
   {
     name: `Mechanic's Toolbox`,
@@ -91,17 +101,20 @@ export const survivorItems: IGameObject[] = [
   {
     name: `Sport Flashlight`,
     rank: IRank.GREEN,
-    icon: null
+    icon: null,
+    link: 'flashlight'
   },
   {
     name: `First Aid Kit`,
     rank: IRank.YELLOW,
-    icon: null
+    icon: null,
+    link: 'medkit'
   },
   {
     name: `Flashlight`,
     rank: IRank.YELLOW,
-    icon: null
+    icon: null,
+    link: 'flashlight'
   },
   {
     name: `Toolbox`,
@@ -111,7 +124,8 @@ export const survivorItems: IGameObject[] = [
   {
     name: `Camping Aid Kit`,
     rank: IRank.BROWN,
-    icon: null
+    icon: null,
+    link: 'medkit'
   },
   {
     name: `Worn-Out Tools`,

@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from '../../Assets/logo.svg';
 import './App.scss';
+import { generateKiller } from '../../Services/generateKiller';
+import { generateSurvivor } from '../../Services/generateSurvivor';
 
 import {
   BrowserRouter as Router,
@@ -14,6 +16,9 @@ import Survivor from '../Survivor/Survivor';
 
 function App() {
   const appFinishedLoading = true;
+  console.log('%c⧭', 'color: #733d00', generateKiller());
+  console.log('%c⧭', 'color: #733d00', generateSurvivor());
+
   return (
     <div className="App">
       <header className="App-header">
