@@ -1,0 +1,9 @@
+.perk-icon {
+  transform: rotateY(0deg) rotate(45.5deg);
+  width: 50%;
+  margin-top: 20px;
+  border: 10px solid black;
+  img {
+    transform: rotateY(0deg) rotate(-45.5deg);
+  }
+}

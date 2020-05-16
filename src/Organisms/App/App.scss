@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Quicksand);
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background-color: #1f2020;
+}
+.app-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .app {
+    // flex: 1 0 100%;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  .app-header {
+    margin-bottom: 32px;
+    &_top-bar {
+      background-color: #ff2a2b;
+      height: 25px;
+    }
+    &_bottom-bar {
+      background-color: #000000;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      h1 {
+        display: inline-block;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        color: #fff;
+        font-size: 1.5em;
+        line-height: 1.1;
+        font-family: Quicksand,sans-serif;
+        font-weight: 400;
+        font-stretch: condensed;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 10px hsla(0,0%,100%,.25), -1px -1px 10px hsla(0,0%,100%,.25);
+        transition: text-shadow .8s cubic-bezier(.5,.18,.115,.87);
+      }
+    }
+  }
+  footer {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: white;
+    }
+    a {
+      color: #ff2a2b;;
+    }
+  }
+}
+
+
+$GREY_DARK: #919194 !default;
+$GREY_DARKEST: #31313D !default;
+$BASE_MEASURE: 8px;
+
+@mixin loading-spinner-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%
+}
+
+@mixin loading-spinner {
+  font-size: $BASE_MEASURE * 5;
+  height: $BASE_MEASURE * 5;
+  margin: (2 * $BASE_MEASURE) 0;
+  position: relative;
+  width: $BASE_MEASURE * 5;
+}
+
+@mixin loading-spinner-base {
+  fill: transparent;
+  font-size: $BASE_MEASURE * 5;
+  height: $BASE_MEASURE * 5;
+  overflow: visible;
+  position: absolute;
+  stroke-linecap: round;
+  stroke-width: $BASE_MEASURE * 0.5;
+  top: 0;
+  width: $BASE_MEASURE * 5;
+}
+
+@mixin loading-spinner-rear {
+  @include loading-spinner-base;
+  circle {
+    stroke-opacity: .15;
+    animation: 15s colorMorphing infinite linear;
+  }
+}
+
+@mixin loading-spinner-front {
+  @include loading-spinner-base;
+  animation: 2s rotate infinite linear;
+  circle {
+    stroke-dasharray: ($BASE_MEASURE * 11.75) ($BASE_MEASURE * 2.375);
+    animation: 2s expandingLine infinite ease-in-out, 4s colorMorphing infinite linear;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes expandingLine {
+  from, 10% { stroke-dashoffset: 0; }
+  50%, to { stroke-dashoffset: $BASE_MEASURE * -14; }
+  from, 10%, to{ stroke-dasharray: ($BASE_MEASURE * 11.75) ($BASE_MEASURE * 2.375); }
+  50%, 60% { stroke-dasharray: ($BASE_MEASURE * 0.05) ($BASE_MEASURE * 14); }
+}
+
+@keyframes colorMorphing {
+  0%, 35%, 100% { stroke: $GREY_DARKEST; }
+  50%, 85% { stroke: $GREY_DARK; }
+}
+
+.loading-spinner {
+  @include loading-spinner;
+  &-container {
+    @include loading-spinner-container;
+    position: absolute;
+    top: 40%;
+  }
+  &-front { @include loading-spinner-front; }
+  &-rear { @include loading-spinner-rear; }
+}
