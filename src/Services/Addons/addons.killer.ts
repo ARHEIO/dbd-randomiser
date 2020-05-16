@@ -46,7 +46,8 @@ export const theHag = [
   { icon: `mintRag.png`, name: `Mint Rag`, rank: IRank.IRIDESCANT },
 ]
 
-export const theCannibal = [{ icon: `vegetableOil.png`, name: `Vegetable Oil`, rank: IRank.BROWN },
+export const theCannibal = [
+  { icon: `vegetableOil.png`, name: `Vegetable Oil`, rank: IRank.BROWN },
   { icon: `sparkPlug.png`, name: `Spark Plug`, rank: IRank.BROWN },
   { icon: `chainsawFile.png`, name: `Chainsaw File`, rank: IRank.BROWN },
   { icon: `speedLimiter.png`, name: `Speed Limiter`, rank: IRank.YELLOW },
@@ -90,7 +91,8 @@ export const theDoctor = [
   { icon: `iridescentKing.png`, name: `Iridescent King`, rank: IRank.IRIDESCANT },
 ]
 
-export const theHillbilly = [{ icon: `vegetableOil.png`, name: `Vegetable Oil`, rank: IRank.BROWN },
+export const theHillbilly = [
+  { icon: `vegetableOil.png`, name: `Vegetable Oil`, rank: IRank.BROWN },
   { icon: `sparkPlug.png`, name: `Spark Plug`, rank: IRank.BROWN },
   { icon: `chainsawFile.png`, name: `Chainsaw File`, rank: IRank.BROWN },
   { icon: `spikedBoots.png`, name: `Spiked Boots`, rank: IRank.YELLOW },
@@ -111,7 +113,8 @@ export const theHillbilly = [{ icon: `vegetableOil.png`, name: `Vegetable Oil`, 
   { icon: `begrimedChains.png`, name: `Begrimed Chains`, rank: IRank.PURPLE },
 ]
 
-export const theNightmare = [{ icon: `woolShirt.png`, name: `Wool Shirt`, rank: IRank.BROWN },
+export const theNightmare = [
+  { icon: `woolShirt.png`, name: `Wool Shirt`, rank: IRank.BROWN },
   { icon: `sheepBlock.png`, name: `Sheep Block`, rank: IRank.BROWN },
   { icon: `kidsDrawing.png`, name: `Kid's Drawing`, rank: IRank.BROWN },
   { icon: `gardenRake.png`, name: `Garden Rake`, rank: IRank.BROWN },
@@ -133,7 +136,8 @@ export const theNightmare = [{ icon: `woolShirt.png`, name: `Wool Shirt`, rank: 
   { icon: `blackBox.png`, name: `Black Box`, rank: IRank.IRIDESCANT },
 ]
 
-export const theShape = [{ icon: `tackyEarrings.png`, name: `Tacky Earrings`, rank: IRank.BROWN },
+export const theShape = [
+  { icon: `tackyEarrings.png`, name: `Tacky Earrings`, rank: IRank.BROWN },
   { icon: `boyfriendsMemo.png`, name: `Boyfriend's Memo`, rank: IRank.BROWN },
   { icon: `blondeHair.png`, name: `Blond Hair`, rank: IRank.BROWN },
   { icon: `reflectiveFragment.png`, name: `Reflective Fragment`, rank: IRank.YELLOW },
@@ -155,7 +159,8 @@ export const theShape = [{ icon: `tackyEarrings.png`, name: `Tacky Earrings`, ra
   { icon: `fragrantTuftOfHair.png`, name: `Fragrant Tuft of Hair`, rank: IRank.IRIDESCANT },
 ]
 
-export const theLegion = [{ icon: `smileyFacePin.png`, name: `Smiley Face Pin`, rank: IRank.BROWN },
+export const theLegion = [
+  { icon: `smileyFacePin.png`, name: `Smiley Face Pin`, rank: IRank.BROWN },
   { icon: `scratchedRuler.png`, name: `Scratched Ruler`, rank: IRank.BROWN },
   { icon: `mischiefList.png`, name: `Mischief List`, rank: IRank.BROWN },
   { icon: `friendshipBracelet.png`, name: `Friendship Bracelet`, rank: IRank.BROWN },
@@ -177,7 +182,8 @@ export const theLegion = [{ icon: `smileyFacePin.png`, name: `Smiley Face Pin`, 
   { icon: `fumingMixTape.png`, name: `Fuming Mix Tape`, rank: IRank.IRIDESCANT },
 ]
 
-export const theHuntress = [{ icon: `coarseStone.png`, name: `Coarse Stone`, rank: IRank.BROWN },
+export const theHuntress = [
+  { icon: `coarseStone.png`, name: `Coarse Stone`, rank: IRank.BROWN },
   { icon: `berusToxin.png`, name: `Berus Toxin`, rank: IRank.BROWN },
   { icon: `bandagedHaft.png`, name: `Bandaged Haft`, rank: IRank.BROWN },
   { icon: `amanitaToxin.png`, name: `Amanita Toxin`, rank: IRank.BROWN },
@@ -199,7 +205,8 @@ export const theHuntress = [{ icon: `coarseStone.png`, name: `Coarse Stone`, ran
   { icon: `iridescentHead.png`, name: `Iridescent Head`, rank: IRank.IRIDESCANT },
 ]
 
-export const thePig = [{ icon: `workshopGrease.png`, name: `Workshop Grease`, rank: IRank.BROWN },
+export const thePig = [
+  { icon: `workshopGrease.png`, name: `Workshop Grease`, rank: IRank.BROWN },
   { icon: `shatteredSyringe.png`, name: `Shattered Syringe`, rank: IRank.BROWN },
   { icon: `johnsMedicalFile.png`, name: `John's Medical File`, rank: IRank.BROWN },
   { icon: `combatStraps.png`, name: `Combat Straps`, rank: IRank.BROWN },
@@ -221,7 +228,8 @@ export const thePig = [{ icon: `workshopGrease.png`, name: `Workshop Grease`, ra
   { icon: `amandasLetter.png`, name: `Amanda's Letter`, rank: IRank.IRIDESCANT },
 ]
 
-export const theGhostFace = [{ icon: `philly.png`, name: `"Philly"`, rank: IRank.BROWN },
+export const theGhostFace = [
+  { icon: `philly.png`, name: `"Philly"`, rank: IRank.BROWN },
   { icon: `walleyesMatchbook.png`, name: `Walleyes Matchbook`, rank: IRank.BROWN },
   { icon: `headlinesCutouts.png`, name: `Headlines Cut-outs`, rank: IRank.BROWN },
   { icon: `cheapCologne.png`, name: `Cheap Cologne`, rank: IRank.BROWN },
@@ -243,7 +251,8 @@ export const theGhostFace = [{ icon: `philly.png`, name: `"Philly"`, rank: IRank
   { icon: `outdoorSecurityCamera.png`, name: `Outdoor Security Camera`, rank: IRank.IRIDESCANT },
 ]
 
-export const theDemogorgon = [{ icon: `rottenPumpkin.png`, name: `Rotten Pumpkin`, rank: IRank.BROWN },
+export const theDemogorgon = [
+  { icon: `rottenPumpkin.png`, name: `Rotten Pumpkin`, rank: IRank.BROWN },
   { icon: `blackHeart.png`, name: `Black Heart`, rank: IRank.BROWN },
   { icon: `ratLiver.png`, name: `Rat Liver`, rank: IRank.BROWN },
   { icon: `ratTail.png`, name: `Rat Tail`, rank: IRank.BROWN },
@@ -265,7 +274,8 @@ export const theDemogorgon = [{ icon: `rottenPumpkin.png`, name: `Rotten Pumpkin
   { icon: `redMoss.png`, name: `Red Moss`, rank: IRank.IRIDESCANT },
 ]
 
-export const theNurse = [{ icon: `woodenHorse.png`, name: `Wooden Horse`, rank: IRank.BROWN },
+export const theNurse = [
+  { icon: `woodenHorse.png`, name: `Wooden Horse`, rank: IRank.BROWN },
   { icon: `whiteNitComb.png`, name: `White Nit Comb`, rank: IRank.BROWN },
   { icon: `plaidFlannel.png`, name: `Plaid Flannel`, rank: IRank.BROWN },
   { icon: `metalSpoon.png`, name: `Metal Spoon`, rank: IRank.BROWN },
@@ -287,7 +297,8 @@ export const theNurse = [{ icon: `woodenHorse.png`, name: `Wooden Horse`, rank: 
   { icon: `matchbox.png`, name: `Matchbox`, rank: IRank.IRIDESCANT },
 ]
 
-export const theClown = [{ icon: `smellyInnerSoles.png`, name: `Smelly Inner Soles`, rank: IRank.BROWN },
+export const theClown = [
+  { icon: `smellyInnerSoles.png`, name: `Smelly Inner Soles`, rank: IRank.BROWN },
   { icon: `robinFeather.png`, name: `Robin Feather`, rank: IRank.BROWN },
   { icon: `fingerlessParadeGloves.png`, name: `Fingerless Parade Gloves`, rank: IRank.BROWN },
   { icon: `ether5Vol.png`, name: `Ether 5 Vol%`, rank: IRank.BROWN },
@@ -309,7 +320,8 @@ export const theClown = [{ icon: `smellyInnerSoles.png`, name: `Smelly Inner Sol
   { icon: `redheadsPinkyFinger.png`, name: `Redhead's Pinky Finger`, rank: IRank.IRIDESCANT },
 ]
 
-export const theDeathslinger = [{ icon: `spitPolishRag.png`, name: `Spit Polish Rag`, rank: IRank.BROWN },
+export const theDeathslinger = [
+  { icon: `spitPolishRag.png`, name: `Spit Polish Rag`, rank: IRank.BROWN },
   { icon: `snakeOil.png`, name: `Snake Oil`, rank: IRank.BROWN },
   { icon: `ricketyChain.png`, name: `Rickety Chain`, rank: IRank.BROWN },
   { icon: `modifiedAmmoBelt.png`, name: `Modified Ammo Belt`, rank: IRank.BROWN },
@@ -331,7 +343,8 @@ export const theDeathslinger = [{ icon: `spitPolishRag.png`, name: `Spit Polish 
   { icon: `hellshireIron.png`, name: `Hellshire Iron`, rank: IRank.IRIDESCANT },
 ]
 
-export const thePlague = [{ icon: `prayerTabletFragment.png`, name: `Prayer Tablet Fragment`, rank: IRank.BROWN },
+export const thePlague = [
+  { icon: `prayerTabletFragment.png`, name: `Prayer Tablet Fragment`, rank: IRank.BROWN },
   { icon: `olibanumIncense.png`, name: `Olibanum Incense`, rank: IRank.BROWN },
   { icon: `limestoneSeal.png`, name: `Limestone Seal`, rank: IRank.BROWN },
   { icon: `healingSalve.png`, name: `Healing Salve`, rank: IRank.BROWN },
@@ -353,7 +366,8 @@ export const thePlague = [{ icon: `prayerTabletFragment.png`, name: `Prayer Tabl
   { icon: `blackIncense.png`, name: `Black Incense`, rank: IRank.IRIDESCANT },
 ]
 
-export const theWraith = [{ icon: `theSerpent-Soot.png`, name: `"The Serpent" - Soot`, rank: IRank.BROWN },
+export const theWraith = [
+  { icon: `theSerpent-Soot.png`, name: `"The Serpent" - Soot`, rank: IRank.BROWN },
   { icon: `theHound-Soot.png`, name: `"The Hound" - Soot`, rank: IRank.BROWN },
   { icon: `theGhost-Soot.png`, name: `"The Ghost" - Soot`, rank: IRank.BROWN },
   { icon: `theBeast-Soot.png`, name: `"The Beast" - Soot`, rank: IRank.BROWN },
@@ -375,7 +389,8 @@ export const theWraith = [{ icon: `theSerpent-Soot.png`, name: `"The Serpent" - 
   { icon: `allSeeing-Spirit.png`, name: `"All Seeing" - Spirit`, rank: IRank.IRIDESCANT },
 ]
 
-export const theSpirit = [{ icon: `zori.png`, name: `Zōri`, rank: IRank.BROWN },
+export const theSpirit = [
+  { icon: `zori.png`, name: `Zōri`, rank: IRank.BROWN },
   { icon: `shiawaseAmulet.png`, name: `Shiawase Amulet`, rank: IRank.BROWN },
   { icon: `origamiCrane.png`, name: `Origami Crane`, rank: IRank.BROWN },
   { icon: `giftedBambooComb.png`, name: `Gifted Bamboo Comb`, rank: IRank.BROWN },
@@ -397,7 +412,8 @@ export const theSpirit = [{ icon: `zori.png`, name: `Zōri`, rank: IRank.BROWN }
   { icon: `fathersGlasses.png`, name: `Father's Glasses`, rank: IRank.IRIDESCANT },
 ]
 
-export const theOni = [{ icon: `yakuyokeTalisman.png`, name: `Yakuyoke Talisman`, rank: IRank.BROWN },
+export const theOni = [
+  { icon: `yakuyokeTalisman.png`, name: `Yakuyoke Talisman`, rank: IRank.BROWN },
   { icon: `rottingRope.png`, name: `Rotting Rope`, rank: IRank.BROWN },
   { icon: `crackedSakazuki.png`, name: `Cracked Sakazuki`, rank: IRank.BROWN },
   { icon: `blackenedToenail.png`, name: `Blackened Toenail`, rank: IRank.BROWN },

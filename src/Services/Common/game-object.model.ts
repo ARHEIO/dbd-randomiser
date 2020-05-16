@@ -4,5 +4,6 @@ export interface IGameObject {
   name: string;
   rank: IRank;
   icon: any;
+  link?: string;
 }
 

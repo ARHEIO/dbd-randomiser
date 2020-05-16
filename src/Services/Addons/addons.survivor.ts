@@ -1,18 +1,21 @@
 import { IGameObject } from "../Common/game-object.model";
 import { IRank } from "../Common/rank.model";
 
+// :'(
+export const firecracker = [];
+
 export const toolbox: IGameObject[] = [
   { icon: `scraps.png`, name: `Scraps`, rank: IRank.BROWN },
-  {  icon: `instructions.png`, name: `Instructions`, rank: IRank.BROWN },
-  {  icon: `cleanRag.png`, name: `Clean Rag`, rank: IRank.BROWN },
-  {  icon: `wireSpool.png`, name: `Wire Spool`, rank: IRank.YELLOW },
-  {  icon: `springClamp.png`, name: `Spring Clamp`, rank: IRank.YELLOW },
-  {  icon: `socketSwivels.png`, name: `Socket Swivels`, rank: IRank.YELLOW },
-  {  icon: `protectiveGloves.png`, name: `Protective Gloves`, rank: IRank.YELLOW },
-  {  icon: `cuttingWire.png`, name: `Cutting Wire`, rank: IRank.YELLOW },
-  {  icon: `hacksaw.png`, name: `Hacksaw`, rank: IRank.GREEN },
-  {  icon: `gripWrench.png`, name: `Grip Wrench`, rank: IRank.GREEN },
-  {  icon: `brandNewPart.png`, name: `Brand New Part`, rank: IRank.IRIDESCANT }
+  { icon: `instructions.png`, name: `Instructions`, rank: IRank.BROWN },
+  { icon: `cleanRag.png`, name: `Clean Rag`, rank: IRank.BROWN },
+  { icon: `wireSpool.png`, name: `Wire Spool`, rank: IRank.YELLOW },
+  { icon: `springClamp.png`, name: `Spring Clamp`, rank: IRank.YELLOW },
+  { icon: `socketSwivels.png`, name: `Socket Swivels`, rank: IRank.YELLOW },
+  { icon: `protectiveGloves.png`, name: `Protective Gloves`, rank: IRank.YELLOW },
+  { icon: `cuttingWire.png`, name: `Cutting Wire`, rank: IRank.YELLOW },
+  { icon: `hacksaw.png`, name: `Hacksaw`, rank: IRank.GREEN },
+  { icon: `gripWrench.png`, name: `Grip Wrench`, rank: IRank.GREEN },
+  { icon: `brandNewPart.png`, name: `Brand New Part`, rank: IRank.IRIDESCANT }
 ]
 
 export const medkit = [
@@ -70,6 +73,3 @@ export const flashlight = [
   { icon: `high-EndSapphireLens.png`, name : `High-End Sapphire Lens`, rank: IRank.PURPLE },
   { icon: `oddBulb.png`, name : `Odd Bulb`, rank: IRank.IRIDESCANT}
 ]
-
-// :'(
-  export const firecracker = [];
