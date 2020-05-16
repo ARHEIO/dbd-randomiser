@@ -441,8 +441,6 @@ const theOni: IKillerAddon[] = [
   { icon: `iridescentFamilyCrest.png`, name: `Iridescent Family Crest`, rank: IRank.IRIDESCANT }
 ]
 
-
-
 export const killerAddons = {
   'theTrapper': theTrapper,
   'theHag': theHag,

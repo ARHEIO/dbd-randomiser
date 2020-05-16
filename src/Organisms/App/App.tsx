@@ -1,8 +1,7 @@
 import React from 'react';
 import logo from '../../Assets/logo.svg';
 import './App.scss';
-import { generateKiller } from '../../Services/generateKiller';
-import { generateSurvivor } from '../../Services/generateSurvivor';
+import { generateKiller, generateSurvivor } from '../../Services/generate';
 
 import {
   BrowserRouter as Router,
