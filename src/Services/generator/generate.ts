@@ -7,12 +7,12 @@ import { Addon, Perk, Item, Killer } from './models';
 
 export interface GeneratedKiller {
   name: string;
-  killerIcon: string;
+  icon: string;
   addons: Addon[];
   perks: Perk[];
 }
 
-export const generateKiller = () => {
+export const generateKiller = (): GeneratedKiller => {
   const killer: Killer = killers[randomNumberGenerator(killers.length)];
   const selectedAddons: Addon[] = getAddons(killer.upgradables);
   const selectedPerks = getPerks(killerPerks);

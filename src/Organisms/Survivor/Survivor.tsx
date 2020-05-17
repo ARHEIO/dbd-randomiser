@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Survivor.scss';
 import { generateSurvivor } from '../../Services/generator/generate';
+import { Perk as IPerk } from '../../Services/generator/models'
+import Perk from '../../Atoms/Perk/Perk';
 
 function Survivor() {
   const [survivorDetails, setSurvivorDetails] = useState<any>({});
@@ -30,11 +32,8 @@ function Survivor() {
             <img alt={`The ${addon.name} addon`} src="addon.icon"/>
           </div>
         ))}
-        {survivorDetails.perks.map((perk: any) => (
-          <div>
-            <p className="survivor_perks">{perk.name}</p>
-            <img alt={perk.name} src={"https://dqr3pglopijar.cloudfront.net/" + perk.icon}/>
-          </div>
+        {survivorDetails.perks.map((perk: IPerk) => (
+          <Perk name={perk.name} icon={perk.icon} rank={perk.rank} />
         ))}
       </div>
       :<div className="loading-spinner-container">
