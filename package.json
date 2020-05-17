@@ -1,6 +1,6 @@
 {
   "name": "dbd-randomiser",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://arhe.io/dbd-randomiser/",
   "dependencies": {
