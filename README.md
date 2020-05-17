@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![CI](https://github.com/ARHEIO/dbd-randomiser/workflows/CI/badge.svg?branch=master)
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com)
+
+[![forthebadge](https://forthebadge.com/images/badges/compatibility-club-penguin.svg)](https://forthebadge.com)
 
 ## Available Scripts
 
