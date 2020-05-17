@@ -7,8 +7,6 @@ name: CI
 on:
   push:
     branches: [ master ]
-
-name: Build and Deploy
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
