@@ -39,7 +39,7 @@ function App() {
       </section>
       <footer>
         <p>Credit to icons goes to u/thatpikminguy on Reddit</p>
-        <p>Grab the icon set yourself <a href="https://www.reddit.com/r/PerkByDaylight/comments/fhqoux/the_shitty_ui_pack_13_chains_of_hate_doctor/" target="_blank">on r/PerkByDaylight</a></p>
+        <p>Grab the icon set yourself <a href="https://www.reddit.com/r/PerkByDaylight/comments/fhqoux/the_shitty_ui_pack_13_chains_of_hate_doctor/" target="_blank" rel="noopener noreferrer">on r/PerkByDaylight</a></p>
       </footer>
     </div>
   );
