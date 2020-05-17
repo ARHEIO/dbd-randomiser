@@ -3,7 +3,7 @@ export const randomNumberGenerator = (max: number) => {
 }
 
 export const getMultiple = (arrayOfThings: any[], numberToGet: number) => {
-  return arrayOfThings.length
+  return arrayOfThings && arrayOfThings.length
     ? arrayOfThings
         .map(x => ({ x, r: Math.random() }))
         .sort((a, b) => a.r - b.r)

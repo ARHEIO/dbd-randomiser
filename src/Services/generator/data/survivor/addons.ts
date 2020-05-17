@@ -1,10 +1,12 @@
-import { IGameObject } from "../Common/game-object.model";
-import { IRank } from "../Common/rank.model";
+import { Addon, IRank } from "../../models";
 
 // :'(
-const firecracker: IGameObject[] = [];
+export const firecracker: Addon[] = [
+  { icon: ``, name: `Nothing`, rank: IRank.BROWN },
+  { icon: ``, name: `Nothing`, rank: IRank.BROWN },
+];
 
-const toolbox: IGameObject[] = [
+export const toolbox: Addon[] = [
   { icon: `scraps.png`, name: `Scraps`, rank: IRank.BROWN },
   { icon: `instructions.png`, name: `Instructions`, rank: IRank.BROWN },
   { icon: `cleanRag.png`, name: `Clean Rag`, rank: IRank.BROWN },
@@ -18,7 +20,7 @@ const toolbox: IGameObject[] = [
   { icon: `brandNewPart.png`, name: `Brand New Part`, rank: IRank.IRIDESCANT }
 ]
 
-const medkit = [
+export const medkit: Addon[] = [
   { icon: `rubberGloves.png`, name : `Rubber Glove`, rank: IRank.BROWN },
   { icon: `butterflyTape.png`, name : `Butterfly Tap`, rank: IRank.BROWN },
   { icon: `bandages.png`, name : `Bandage`, rank: IRank.BROWN },
@@ -34,7 +36,7 @@ const medkit = [
   { icon: `anti-haemorrhagicSyringe.png`, name : `Anti-Haemorrhagic Syringe`, rank: IRank.IRIDESCANT }
 ]
 
-const map =  [
+export const map: Addon[] = [
   { icon: `mapAddendum.png`, name : `Map Addendum`, rank: IRank.BROWN },
   { icon: `yellowWire.png`, name : `Yellow Wire`, rank: IRank.YELLOW },
   { icon: `unusualStamp.png`, name : `Unusual Stamp`, rank: IRank.YELLOW },
@@ -46,7 +48,7 @@ const map =  [
   { icon: `crystalBead.png`, name : `Crystal Bead`, rank: IRank.PURPLE }
 ]
 
-const ring =  [
+export const key: Addon[] = [
   { icon: `prayerRope.png`, name : `Prayer Rope`, rank: IRank.BROWN },
   { icon: `scratchedPearl.png`, name : `Scratched Pearl`, rank: IRank.YELLOW },
   { icon: `prayerBeads.png`, name : `Prayer Beads`, rank: IRank.YELLOW },
@@ -58,7 +60,7 @@ const ring =  [
   { icon: `uniqueWeddingRing.png`, name : `Unique Wedding Ring`, rank: IRank.PURPLE }
 ]
 
-const flashlight = [
+export const flashlight: Addon[] = [
   { icon: `wideLens.png`, name : `Wide Lens`, rank: IRank.BROWN },
   { icon: `powerBulb.png`, name : `Power Bulb`, rank: IRank.BROWN },
   { icon: `leatherGrip.png`, name : `Leather Grip`, rank: IRank.BROWN },
@@ -73,12 +75,3 @@ const flashlight = [
   { icon: `high-EndSapphireLens.png`, name : `High-End Sapphire Lens`, rank: IRank.PURPLE },
   { icon: `oddBulb.png`, name : `Odd Bulb`, rank: IRank.IRIDESCANT}
 ]
-
-export const survivorAddons: any = {
-  'firecracker': firecracker,
-  'toolbox': toolbox,
-  'medkit': medkit,
-  'map': map,
-  'ring': ring,
-  'flashlight': flashlight
-}
