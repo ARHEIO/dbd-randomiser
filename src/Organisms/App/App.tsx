@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../../Assets/logo.svg';
 import './App.scss';
+import { generateKiller, generateSurvivor } from '../../Services/generator/generate';
 
 import {
   BrowserRouter as Router,
@@ -14,35 +14,31 @@ import Survivor from '../Survivor/Survivor';
 
 function App() {
   const appFinishedLoading = true;
+  console.log('%c⧭', 'color: #733d00', generateSurvivor());
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app-container">
+      <header className="app-header">
+        <div className="app-header_top-bar"></div>
+        <div className="app-header_bottom-bar">
+          <h1>Dead By Daylight Loadout Randomiser</h1>
+        </div>
       </header>
-      <Router
-        basename={`/dbd-randomiser`}>
-        {
-          appFinishedLoading
+      <section className="app">
+        <Router
+          basename={`/dbd-randomiser`}>
+          {
+            appFinishedLoading
             ? (
-            <Switch>
-              <Route path='/killer' component={Killer} />
-              <Route path='/survivor' component={Survivor} />
-              <Route path='/*' exact component={Landing} />
-            </Switch>
-            ) : <div></div>
-        }
-      </Router>
+              <Switch>
+                <Route path='/killer' component={Killer} />
+                <Route path='/survivor' component={Survivor} />
+                <Route path='/*' exact component={Landing} />
+              </Switch>
+              ) : <div></div>
+            }
+        </Router>
+      </section>
     </div>
   );
 }
