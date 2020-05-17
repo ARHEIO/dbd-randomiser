@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import './Killer.scss';
 import { generateKiller } from '../../Services/generator/generate';
 
@@ -25,18 +24,18 @@ function Killer() {
       <div className="killer">
         <div className="killer_name">
           <p>{killerDetails.name}</p>
-          <img src={"https://dqr3pglopijar.cloudfront.net/" + killerDetails.icon}/>
+          <img alt={killerDetails.name}src={"https://dqr3pglopijar.cloudfront.net/" + killerDetails.icon}/>
         </div>
         {killerDetails.addons.map((addon: any) => (
           <div>
             <p className="killer_addons">{addon.name}</p>
-            <img src="addon.icon"/>
+            <img alt={`The ${addon.name} addon`} src="addon.icon"/>
           </div>
         ))}
         {killerDetails.perks.map((perk: any) => (
           <div>
             <p className="killer_perks">{perk.name}</p>
-            <img src={"https://dqr3pglopijar.cloudfront.net/" + perk.icon}/>
+            <img alt={perk.name}src={"https://dqr3pglopijar.cloudfront.net/" + perk.icon}/>
           </div>
         ))}
       </div>}

@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.scss';
-import { generateKiller, generateSurvivor } from '../../Services/generator/generate';
 
 import {
   BrowserRouter as Router,
@@ -14,7 +13,6 @@ import Survivor from '../Survivor/Survivor';
 
 function App() {
   const appFinishedLoading = true;
-  console.log('%c⧭', 'color: #733d00', generateSurvivor());
 
   return (
     <div className="app-container">

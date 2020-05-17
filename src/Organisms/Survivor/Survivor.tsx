@@ -22,18 +22,18 @@ function Survivor() {
       ? <div className="survivor">
         <div className="survivor_name">
           <p>{survivorDetails.item.name}</p>
-          <img src={"https://dqr3pglopijar.cloudfront.net/" + survivorDetails.item.icon}/>
+          <img alt={survivorDetails.item.name} src={"https://dqr3pglopijar.cloudfront.net/" + survivorDetails.item.icon}/>
         </div>
         {survivorDetails.addons.map((addon: any) => (
           <div>
             <p className="survivor_addons">{addon.name}</p>
-            <img src="addon.icon"/>
+            <img alt={`The ${addon.name} addon`} src="addon.icon"/>
           </div>
         ))}
         {survivorDetails.perks.map((perk: any) => (
           <div>
             <p className="survivor_perks">{perk.name}</p>
-            <img src={"https://dqr3pglopijar.cloudfront.net/" + perk.icon}/>
+            <img alt={perk.name} src={"https://dqr3pglopijar.cloudfront.net/" + perk.icon}/>
           </div>
         ))}
       </div>
