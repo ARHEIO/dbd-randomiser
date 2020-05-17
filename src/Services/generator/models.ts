@@ -19,5 +19,6 @@ export interface IModifiable extends IBasic {
 
 export type Killer = IModifiable; // doesn't use rank
 export type Item = IModifiable;
+export type Survivor = IBasic;
 export type Addon = IBasic;
 export type Perk = IBasic;

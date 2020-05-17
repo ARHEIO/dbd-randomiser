@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './Killer.scss';
-import { generateKiller } from '../../Services/generator/generate';
+import { generateKiller, GeneratedKiller } from '../../Services/generator/generate';
+import Perk from '../../Atoms/Perk/Perk';
+import Addon from '../../Atoms/Addon/Addon';
+import Portrait from '../../Atoms/Portrait/Portrait';
+import { Perk as IPerk } from '../../Services/generator/models'
 
 
 function Killer() {
-  const [killerDetails, setKillerDetails] = useState<any>({});
+  const [killerDetails, setKillerDetails] = useState<GeneratedKiller|null>(null);
 
   const getKiller = () => {
     const killer = generateKiller();
@@ -23,20 +27,13 @@ function Killer() {
       {killerDetails && killerDetails.name &&
       <div className="killer">
         <div className="killer_name">
-          <p>{killerDetails.name}</p>
-          <img alt={killerDetails.name}src={"https://dqr3pglopijar.cloudfront.net/" + killerDetails.icon}/>
+          <Portrait name={killerDetails.name} icon={killerDetails.icon}/>
         </div>
         {killerDetails.addons.map((addon: any) => (
-          <div>
-            <p className="killer_addons">{addon.name}</p>
-            <img alt={`The ${addon.name} addon`} src="addon.icon"/>
-          </div>
+          <Addon name={addon.name} icon={addon.icon} rank={addon.rank} />
         ))}
-        {killerDetails.perks.map((perk: any) => (
-          <div>
-            <p className="killer_perks">{perk.name}</p>
-            <img alt={perk.name}src={"https://dqr3pglopijar.cloudfront.net/" + perk.icon}/>
-          </div>
+        {killerDetails.perks.map((perk: IPerk) => (
+          <Perk name={perk.name} icon={perk.icon} rank={perk.rank} />
         ))}
       </div>}
 
