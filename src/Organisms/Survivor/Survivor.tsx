@@ -3,6 +3,8 @@ import './Survivor.scss';
 import { generateSurvivor } from '../../Services/generator/generate';
 import { Perk as IPerk } from '../../Services/generator/models'
 import Perk from '../../Atoms/Perk/Perk';
+import Addon from '../../Atoms/Addon/Addon';
+import Portrait from '../../Atoms/Portrait/Portrait';
 
 function Survivor() {
   const [survivorDetails, setSurvivorDetails] = useState<any>({});
@@ -23,14 +25,13 @@ function Survivor() {
       {survivorDetails && survivorDetails.item
       ? <div className="survivor">
         <div className="survivor_name">
-          <p>{survivorDetails.item.name}</p>
-          <img alt={survivorDetails.item.name} src={"https://dqr3pglopijar.cloudfront.net/" + survivorDetails.item.icon}/>
+        <Portrait name={survivorDetails.name} icon={survivorDetails.icon}/>
+        </div>
+        <div className="survivor_item">
+          <Addon name={survivorDetails.item.name} icon={survivorDetails.item.icon} rank={survivorDetails.item.rank} />
         </div>
         {survivorDetails.addons.map((addon: any) => (
-          <div>
-            <p className="survivor_addons">{addon.name}</p>
-            <img alt={`The ${addon.name} addon`} src="addon.icon"/>
-          </div>
+          <Addon name={addon.name} icon={addon.icon} rank={addon.rank} />
         ))}
         {survivorDetails.perks.map((perk: IPerk) => (
           <Perk name={perk.name} icon={perk.icon} rank={perk.rank} />

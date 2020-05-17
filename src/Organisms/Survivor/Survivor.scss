@@ -49,10 +49,7 @@
       flex-direction: column;
       align-items: center;
     }
-    &_name{
-      grid-column: span 2;
-    }
-    &_addons, &_perks{
+    &_name, &_item, &_addons, &_perks{
       grid-column: span 1;
     }
     &_perks {

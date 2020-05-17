@@ -8,7 +8,7 @@ const Addon = (props: IAddon) => {
     <div>
       <p className="killer_addons">{props.name}</p>
       <div className="addon-icon" style={{backgroundColor: colourConfig[`${props.rank}`]}}>
-        <img alt={`The ${props.name} addon`} src="addon.icon"/>
+        <img alt={`The ${props.name} addon`} src={"https://dqr3pglopijar.cloudfront.net/" + props.icon}/>
       </div>
     </div>
   );

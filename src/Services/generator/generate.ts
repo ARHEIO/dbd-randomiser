@@ -3,7 +3,8 @@ import { killerPerks } from './data/killer/perks';
 import { randomNumberGenerator, getAddons, getPerks } from './helpers';
 import { survivorItems } from './data/survivor/items';
 import { SurvivorPerks } from './data/survivor/perks';
-import { Addon, Perk, Item, Killer } from './models';
+import { survivors } from './data/survivor/survivors';
+import { Addon, Perk, Item, Killer, Survivor } from './models';
 
 export interface GeneratedKiller {
   name: string;
@@ -25,12 +26,14 @@ export const generateKiller = (): GeneratedKiller => {
 }
 
 export const generateSurvivor = () => {
+  const survivor: Survivor = survivors[randomNumberGenerator(survivors.length)];
   const item: Item = survivorItems[randomNumberGenerator(survivorItems.length)];
   const selectedAddons: Addon[] = getAddons(item.upgradables);
   const selectedPerks = getPerks(SurvivorPerks);
   return {
+    name: survivor.name,
+    icon: survivor.icon,
     item: item,
-    icon: item.icon,
     addons: selectedAddons,
     perks: selectedPerks
   }
