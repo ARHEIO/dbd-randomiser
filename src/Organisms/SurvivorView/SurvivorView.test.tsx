@@ -1,9 +1,9 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Killer from './Killer';
+import SurvivorView from './SurvivorView';
 
 test('renders learn react link', () => {
-  const { getByText } = render(<Killer />);
+  const { getByText } = render(<SurvivorView />);
   const linkElement = getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });

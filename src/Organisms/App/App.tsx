@@ -7,9 +7,9 @@ import {
   Route,
 } from 'react-router-dom';
 
-import Landing from '../Landing/Landing';
-import Killer from '../Killer/Killer';
-import Survivor from '../Survivor/Survivor';
+import LandingView from '../LandingView/LandingView';
+import KillerView from '../KillerView/KillerView';
+import SurvivorView from '../SurvivorView/SurvivorView';
 
 function App() {
   const appFinishedLoading = true;
@@ -29,17 +29,16 @@ function App() {
             appFinishedLoading
             ? (
               <Switch>
-                <Route path='/killer' component={Killer} />
-                <Route path='/survivor' component={Survivor} />
-                <Route path='/*' exact component={Landing} />
+                <Route path='/killer' component={KillerView} />
+                <Route path='/survivor' component={SurvivorView} />
+                <Route path='/*' exact component={LandingView} />
               </Switch>
               ) : <div></div>
             }
         </Router>
       </section>
-      <footer>
-        <p>Credit to icons goes to u/thatpikminguy on Reddit</p>
-        <p>Grab the icon set yourself <a href="https://www.reddit.com/r/PerkByDaylight/comments/fhqoux/the_shitty_ui_pack_13_chains_of_hate_doctor/" target="_blank" rel="noopener noreferrer">on r/PerkByDaylight</a></p>
+      <footer className="app-footer">
+        <p>Credit to icons goes to u/thatpikminguy on Reddit. Grab the icon set yourself on <a href="https://www.reddit.com/r/PerkByDaylight/comments/fhqoux/the_shitty_ui_pack_13_chains_of_hate_doctor/" target="_blank" rel="noopener noreferrer">r/PerkByDaylight</a></p>
       </footer>
     </div>
   );
