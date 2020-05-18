@@ -11,9 +11,9 @@ function Killer() {
   const [killerDetails, setKillerDetails] = useState<GeneratedKiller|null>(null);
 
   const getKiller = () => {
-    const killer = generateKiller();
-    setKillerDetails(killer);
-  }
+    setKillerDetails(null) // set loading state
+    generateKiller().then(killer => setKillerDetails(killer))
+  };
   
   useEffect(() => {
     getKiller();
@@ -24,8 +24,8 @@ function Killer() {
       <h2>Killer</h2>
       <button onClick={getKiller} >Generate</button>
 
-      {killerDetails && killerDetails.name &&
-      <div className="killer">
+      {killerDetails && killerDetails.name
+      ? <div className="killer">
         <div className="killer_name">
           <Portrait name={killerDetails.name} icon={killerDetails.icon}/>
         </div>
@@ -35,8 +35,14 @@ function Killer() {
         {killerDetails.perks.map((perk: IPerk) => (
           <Perk name={perk.name} icon={perk.icon} rank={perk.rank} />
         ))}
-      </div>}
-
+      </div>
+      :<div className="survivor loading-spinner-container">
+        <div className="loading-spinner">
+          <svg className="loading-spinner-rear"><circle cx="50%" cy="50%"  r="18px"/></svg>
+          <svg className="loading-spinner-front"><circle cx="50%" cy="50%" r="18px"/></svg>
+        </div>
+      </div>
+      }
     </div>
   );
 }

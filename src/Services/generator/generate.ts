@@ -13,28 +13,44 @@ export interface GeneratedKiller {
   perks: Perk[];
 }
 
-export const generateKiller = (): GeneratedKiller => {
-  const killer: Killer = killers[randomNumberGenerator(killers.length)];
-  const selectedAddons: Addon[] = getAddons(killer.upgradables);
-  const selectedPerks = getPerks(killerPerks);
-  return {
-    name: killer.name,
-    icon: killer.icon,
-    addons: selectedAddons,
-    perks: selectedPerks
-  }
+export const generateKiller = (): Promise<GeneratedKiller> => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => { // simulate api call
+      const killer: Killer = killers[randomNumberGenerator(killers.length)];
+      const selectedAddons: Addon[] = getAddons(killer.upgradables);
+      const selectedPerks = getPerks(killerPerks);
+      resolve( {
+        name: killer.name,
+        icon: killer.icon,
+        addons: selectedAddons,
+        perks: selectedPerks
+      })
+    }, 1000);
+  })
 }
 
-export const generateSurvivor = () => {
-  const survivor: Survivor = survivors[randomNumberGenerator(survivors.length)];
-  const item: Item = survivorItems[randomNumberGenerator(survivorItems.length)];
-  const selectedAddons: Addon[] = getAddons(item.upgradables);
-  const selectedPerks = getPerks(SurvivorPerks);
-  return {
-    name: survivor.name,
-    icon: survivor.icon,
-    item: item,
-    addons: selectedAddons,
-    perks: selectedPerks
-  }
+export interface GeneratedSurvivor {
+  name: string;
+  icon: string;
+  item: Item;
+  addons: Addon[];
+  perks: Perk[];
+}
+
+export const generateSurvivor = (): Promise<GeneratedSurvivor> => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => { // simulate api call
+      const survivor: Survivor = survivors[randomNumberGenerator(survivors.length)];
+      const item: Item = survivorItems[randomNumberGenerator(survivorItems.length)];
+      const selectedAddons: Addon[] = getAddons(item.upgradables);
+      const selectedPerks = getPerks(SurvivorPerks);
+      resolve({
+        name: survivor.name,
+        icon: survivor.icon,
+        item: item,
+        addons: selectedAddons,
+        perks: selectedPerks
+      })
+    }, 1000)
+  })
 }

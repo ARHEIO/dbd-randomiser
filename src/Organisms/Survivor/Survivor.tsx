@@ -10,11 +10,12 @@ function Survivor() {
   const [survivorDetails, setSurvivorDetails] = useState<any>({});
 
   const getSurvivor = () => {
-    setSurvivorDetails(generateSurvivor());
-  }
+    setSurvivorDetails(null) // set loading state
+    generateSurvivor().then(survivor => setSurvivorDetails(survivor))
+  };
   
   useEffect(() => { 
-    setSurvivorDetails(generateSurvivor())
+    getSurvivor();
   }, []);
 
   return (
@@ -37,7 +38,7 @@ function Survivor() {
           <Perk name={perk.name} icon={perk.icon} rank={perk.rank} />
         ))}
       </div>
-      :<div className="loading-spinner-container">
+      :<div className="survivor loading-spinner-container">
         <div className="loading-spinner">
           <svg className="loading-spinner-rear"><circle cx="50%" cy="50%"  r="18px"/></svg>
           <svg className="loading-spinner-front"><circle cx="50%" cy="50%" r="18px"/></svg>
