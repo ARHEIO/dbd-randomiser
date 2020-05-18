@@ -1,12 +1,30 @@
-![CI](https://github.com/ARHEIO/dbd-randomiser/workflows/CI/badge.svg?branch=master)
+![Release Build](https://github.com/ARHEIO/dbd-randomiser/workflows/CI/badge.svg?branch=master)
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-resentment.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/compatibility-club-penguin.svg)](https://forthebadge.com)
 
-[![forthebadge](https://forthebadge.com/images/badges/compatibility-club-penguin.svg)](https://forthebadge.com)
+# Access at <https://arhe.io/dbd-randomiser/>
 
-## Available Scripts
+Hosted like <3 via Github Pages
 
-In the project directory, you can run:
+# DBD Loadout Randomiser
+
+Dead by Daylight is a asymmetrical competative horror game developed and updated by Behaviour Interactive. In said game, players can choose to play a killer or a survivor, and select a loadout in order to either enhance an strong existing attribute of the character they play, or to cover weaker attribute to prevent misplays.
+
+While the game has a public competative ranking system, playing with friends is a unique experience in that all loadout options are available. While it can be fun to use the optimal loadout to ensure victory, it is often more fun to randomise a loadout and make do, learning to more unpredictable gameplay and neither side knows what to expect. These matches with friends end up becoming the more memorable.
+
+## TODO
+
+* Add a linter for God's sake
+* Move data assets out in DynamoDB document storage
+* Create a lambda based ecosystem to access DynamoDB content and maintain a serverless backend
+* Implement unit tests with react-testing-library
+* Implement integration tests with cypress
+* Move common code out into re-uasble components
+* Add filters to allow certain selections to be removed from the pool
+  * Should this be server or client side?
+* Optimise for Mobile devices
+
+## Running the App
 
 ### `npm start`
 

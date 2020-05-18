@@ -1,8 +1,8 @@
 import React from 'react';
-import './Landing.scss';
+import './LandingView.scss';
 import { Link } from 'react-router-dom';
 
-function Landing() {
+const LandingView = () => {
   return (
     <div className="landing-container">
        <Link className="link-button" to={`/survivor`}>
@@ -18,4 +18,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default LandingView;
