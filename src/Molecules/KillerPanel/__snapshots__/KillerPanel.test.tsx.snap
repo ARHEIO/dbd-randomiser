@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search View should render when the default object is passed 1`] = `
+"<div class=\\"killer\\">
+  <div class=\\"killer_name\\">
+    <div>
+      <p class=\\"name\\">Adam</p>
+      <div class=\\"portrait-icon\\"><img alt=\\"Adam\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/adam.png\\"></div>
+    </div>
+  </div>
+  <div>
+    <p class=\\"killer_addons\\">Evoluent Vertical Mouse 4</p>
+    <div class=\\"addon-icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"The Evoluent Vertical Mouse 4 addon\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
+  </div>
+  <div>
+    <p class=\\"killer_addons\\">OLKB Preonic</p>
+    <div class=\\"addon-icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"The OLKB Preonic addon\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
+  </div>
+  <div class=\\"perk\\">
+    <p class=\\"killer_perks\\">Archetecture</p>
+    <div class=\\"perk-icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"Archetecture\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
+  </div>
+  <div class=\\"perk\\">
+    <p class=\\"killer_perks\\">Dockerised</p>
+    <div class=\\"perk-icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"Dockerised\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
+  </div>
+  <div class=\\"perk\\">
+    <p class=\\"killer_perks\\">Carpel Tunneling</p>
+    <div class=\\"perk-icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"Carpel Tunneling\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
+  </div>
+  <div class=\\"perk\\">
+    <p class=\\"killer_perks\\">8 Hour Nap</p>
+    <div class=\\"perk-icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"8 Hour Nap\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
+  </div>
+</div>"
+`;

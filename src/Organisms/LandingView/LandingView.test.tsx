@@ -1,9 +1,16 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Landing from './LandingView';
+import pretty from 'pretty';
+import { MemoryRouter } from 'react-router-dom';
+import LandingView from './LandingView';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<Landing />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('Landing View', () => {
+  it('should render', () => {
+    const { container } = render(
+      <MemoryRouter>
+        <LandingView />
+      </MemoryRouter>,
+    );
+    expect(pretty(container.innerHTML)).toMatchSnapshot();
+  });
 });

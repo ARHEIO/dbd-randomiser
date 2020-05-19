@@ -1,144 +1,144 @@
-import { Item, IRank } from "../../models";
+import { Item, IRank } from '../../models';
 import * as survivorAddons from './addons';
 
 
 export const survivorItems: Item[] = [
   {
-    name: `All Hallows' Eve Lunchbox`,
+    name: 'All Hallows\' Eve Lunchbox',
     rank: IRank.GOLD,
     icon: 'assets/survivor/items/iconItems_medkitHalloween.png',
-    upgradables: survivorAddons.medkit
+    upgradables: survivorAddons.medkit,
   },
   {
-    name: `Chinese Firecracker`,
+    name: 'Chinese Firecracker',
     rank: IRank.GOLD,
     icon: 'assets/survivor/items/iconItems_chineseFirecracker.png',
-    upgradables: survivorAddons.firecracker
+    upgradables: survivorAddons.firecracker,
   },
   {
-    name: `Third Year Party Starter`,
+    name: 'Third Year Party Starter',
     rank: IRank.GOLD,
     icon: 'assets/survivor/items/iconItems_partyPopper.png',
-    upgradables: survivorAddons.firecracker
+    upgradables: survivorAddons.firecracker,
   },
   {
-    name: `Will O' Wisp`,
+    name: 'Will O\' Wisp',
     rank: IRank.GOLD,
     icon: 'assets/survivor/items/iconItems_flashlightHalloween.png',
-    upgradables: survivorAddons.flashlight
+    upgradables: survivorAddons.flashlight,
   },
   {
-    name: `Winter Party Starter`,
+    name: 'Winter Party Starter',
     rank: IRank.GOLD,
     icon: 'assets/survivor/items/iconItems_winterEventFirecracker.png',
-    upgradables: survivorAddons.firecracker
+    upgradables: survivorAddons.firecracker,
   },
   {
-    name: `Rainbow Map`,
+    name: 'Rainbow Map',
     rank: IRank.IRIDESCANT,
     icon: 'assets/survivor/items/iconItems_rainbowMap.png',
-    upgradables: survivorAddons.map
+    upgradables: survivorAddons.map,
   },
   {
-    name: `Skeleton Key`,
+    name: 'Skeleton Key',
     rank: IRank.IRIDESCANT,
     icon: 'assets/survivor/items/iconItems_key.png',
-    upgradables: survivorAddons.key
+    upgradables: survivorAddons.key,
   },
   {
-    name: `Alex's Toolbox`,
+    name: 'Alex\'s Toolbox',
     rank: IRank.PURPLE,
     icon: 'assets/survivor/items/iconItems_toolboxAlexs.png',
-    upgradables: survivorAddons.toolbox
+    upgradables: survivorAddons.toolbox,
   },
   {
-    name: `Dull Key`,
+    name: 'Dull Key',
     rank: IRank.PURPLE,
     icon: 'assets/survivor/items/iconItems_dullKey.png',
-    upgradables: survivorAddons.key
+    upgradables: survivorAddons.key,
   },
   {
-    name: `Ranger Med-Kit`,
+    name: 'Ranger Med-Kit',
     rank: IRank.PURPLE,
     icon: 'assets/survivor/items/iconItems_rangersAidKit.png',
-    upgradables: survivorAddons.medkit
+    upgradables: survivorAddons.medkit,
   },
   {
-    name: `Engineer's Toolbox`,
+    name: 'Engineer\'s Toolbox',
     rank: IRank.PURPLE,
     icon: 'assets/survivor/items/iconItems_toolboxEngineers.png',
-    upgradables: survivorAddons.toolbox
+    upgradables: survivorAddons.toolbox,
   },
   {
-    name: `Utility Flashlight`,
+    name: 'Utility Flashlight',
     rank: IRank.PURPLE,
     icon: 'assets/survivor/items/iconItems_flashlightUtility.png',
-    upgradables: survivorAddons.flashlight
+    upgradables: survivorAddons.flashlight,
   },
   {
-    name: `Broken Key`,
+    name: 'Broken Key',
     rank: IRank.GREEN,
     icon: 'assets/survivor/items/iconItems_brokenKey.png',
-    upgradables: survivorAddons.key
+    upgradables: survivorAddons.key,
   },
   {
-    name: `Commodious Toolbox`,
+    name: 'Commodious Toolbox',
     rank: IRank.GREEN,
     icon: 'assets/survivor/items/iconItems_toolboxCommodious.png',
-    upgradables: survivorAddons.toolbox
+    upgradables: survivorAddons.toolbox,
   },
   {
-    name: `Emergency Med-Kit`,
+    name: 'Emergency Med-Kit',
     rank: IRank.GREEN,
     icon: 'assets/survivor/items/iconItems_medkit.png',
-    upgradables: survivorAddons.medkit
+    upgradables: survivorAddons.medkit,
   },
   {
-    name: `Map`,
+    name: 'Map',
     rank: IRank.GREEN,
     icon: 'assets/survivor/items/iconItems_map.png',
-    upgradables: survivorAddons.map
+    upgradables: survivorAddons.map,
   },
   {
-    name: `Mechanic's Toolbox`,
+    name: 'Mechanic\'s Toolbox',
     rank: IRank.GREEN,
     icon: 'assets/survivor/items/iconItems_toolboxMechanics.png',
-    upgradables: survivorAddons.toolbox
+    upgradables: survivorAddons.toolbox,
   },
   {
-    name: `Sport Flashlight`,
+    name: 'Sport Flashlight',
     rank: IRank.GREEN,
     icon: 'assets/survivor/items/iconItems_flashlightSport.png',
-    upgradables: survivorAddons.flashlight
+    upgradables: survivorAddons.flashlight,
   },
   {
-    name: `First Aid Kit`,
+    name: 'First Aid Kit',
     rank: IRank.YELLOW,
     icon: 'assets/survivor/items/iconItems_firstAidKit.png',
-    upgradables: survivorAddons.medkit
+    upgradables: survivorAddons.medkit,
   },
   {
-    name: `Flashlight`,
+    name: 'Flashlight',
     rank: IRank.YELLOW,
     icon: 'assets/survivor/items/iconItems_flashlight.png',
-    upgradables: survivorAddons.flashlight
+    upgradables: survivorAddons.flashlight,
   },
   {
-    name: `Toolbox`,
+    name: 'Toolbox',
     rank: IRank.YELLOW,
     icon: 'assets/survivor/items/iconItems_toolbox.png',
-    upgradables: survivorAddons.toolbox
+    upgradables: survivorAddons.toolbox,
   },
   {
-    name: `Camping Aid Kit`,
+    name: 'Camping Aid Kit',
     rank: IRank.BROWN,
     icon: 'assets/survivor/items/iconItems_rundownAidKit.png',
-    upgradables: survivorAddons.medkit
+    upgradables: survivorAddons.medkit,
   },
   {
-    name: `Worn-Out Tools`,
+    name: 'Worn-Out Tools',
     rank: IRank.BROWN,
     icon: 'assets/survivor/items/iconItems_toolboxWornOut.png',
-    upgradables: survivorAddons.toolbox
+    upgradables: survivorAddons.toolbox,
   },
-]
+];
