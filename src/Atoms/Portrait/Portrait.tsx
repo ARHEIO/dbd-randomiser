@@ -1,15 +1,16 @@
-import React from 'react';
-import './Portrait.scss'
+import React, { ReactElement } from 'react';
+import './Portrait.scss';
 
-const Perk = (props: {name: string; icon: string}) => {
+const Portrait = (props: { name: string; icon: string }): ReactElement => {
+  const { name, icon } = props;
   return (
     <div>
-      <p className="name">{props.name}</p>
+      <p className="name">{name}</p>
       <div className="portrait-icon">
-        <img alt={props.name}src={"https://dqr3pglopijar.cloudfront.net/" + props.icon}/>
+        <img alt={name} src={`https://dqr3pglopijar.cloudfront.net/${icon}`} />
       </div>
     </div>
   );
-}
+};
 
-export default Perk;
+export default Portrait;

@@ -7,18 +7,18 @@ export enum IRank {
   GOLD
 }
 
-export interface IBasic {
+export interface BasicObject {
   name: string;
   icon: string;
   rank: IRank | null;
 }
 
-export interface IModifiable extends IBasic {
-  upgradables: IBasic[]
+export interface UpgradableObject extends BasicObject {
+  upgradables: BasicObject[];
 }
 
-export type Killer = IModifiable; // doesn't use rank
-export type Item = IModifiable;
-export type Survivor = IBasic;
-export type Addon = IBasic;
-export type Perk = IBasic;
+export type Killer = UpgradableObject; // doesn't use rank
+export type Item = UpgradableObject;
+export type Survivor = BasicObject;
+export type Addon = BasicObject;
+export type Perk = BasicObject;

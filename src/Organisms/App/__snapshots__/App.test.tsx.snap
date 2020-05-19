@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+"<div class=\\"app-container\\">
+  <header class=\\"app-header\\">
+    <div class=\\"app-header_top-bar\\"></div>
+    <div class=\\"app-header_bottom-bar\\">
+      <h1>Dead By Daylight Loadout Randomiser</h1>
+    </div>
+  </header>
+  <section class=\\"app\\">
+    <div class=\\"landing-container\\"><a class=\\"link-button\\" href=\\"#/survivor\\"><img alt=\\"survivor\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/iconHelpLoading_survivor.png\\">
+        <p>Randomise survivor build</p>
+      </a><a class=\\"link-button\\" href=\\"#/killer\\"><img alt=\\"killer\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/iconHelpLoading_killer.png\\">
+        <p>Randomise killer build</p>
+      </a></div>
+  </section>
+  <footer class=\\"app-footer\\">
+    <p>Credit to icons goes to u/thatpikminguy on Reddit. Grab the icon set yourself on<a href=\\"https://www.reddit.com/r/PerkByDaylight/comments/fhqoux/the_shitty_ui_pack_13_chains_of_hate_doctor/\\" target=\\"_blank\\" rel=\\"noopener noreferrer\\">r/PerkByDaylight</a></p>
+  </footer>
+</div>"
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing View should render 1`] = `
+"<div class=\\"landing-container\\"><a class=\\"link-button\\" href=\\"/survivor\\"><img alt=\\"survivor\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/iconHelpLoading_survivor.png\\">
+    <p>Randomise survivor build</p>
+  </a><a class=\\"link-button\\" href=\\"/killer\\"><img alt=\\"killer\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/iconHelpLoading_killer.png\\">
+    <p>Randomise killer build</p>
+  </a></div>"
+`;
