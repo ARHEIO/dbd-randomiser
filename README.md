@@ -14,15 +14,18 @@ While the game has a public competative ranking system, playing with friends is 
 
 ## TODO
 
-* Add a linter for God's sake
+* ~~Add a linter for God's sake~~
 * Move data assets out in DynamoDB document storage
 * Create a lambda based ecosystem to access DynamoDB content and maintain a serverless backend
-* Implement unit tests with react-testing-library
+* ~~Implement unit tests with react-testing-library~~
 * Implement integration tests with cypress
-* Move common code out into re-uasble components
+* ~~Move common code out into re-uasble components~~
 * Add filters to allow certain selections to be removed from the pool
   * Should this be server or client side?
-* Optimise for Mobile devices
+* ~~Optimise for Mobile devices~~
+* Solve issue with state changes outside an `act` in tests
+* Fix data to point to the proper file structure order
+* Make images have a placeholder until they load
 
 ## Running the App
 

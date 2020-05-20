@@ -22,7 +22,7 @@ const KillerView = (): ReactElement => {
     <div className="killer-container">
       <h2>Killer</h2>
       <div className="killer-toolbar">
-        <Button variant="contained" color="primary" onClick={getNewKiller}>Generate New Loadout</Button>
+        <Button className="btn-generate-killer" variant="contained" color="primary" onClick={getNewKiller}>Generate New Loadout</Button>
         <Button variant="outlined" color="secondary" href="#/survivor">To Survivor Loadout</Button>
       </div>
       { killerDetails && killerDetails.name

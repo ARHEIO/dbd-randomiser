@@ -21,7 +21,7 @@ const SurvivorView = (): ReactElement => {
     <div className="survivor-container">
       <h2>Survivor</h2>
       <div className="survivor-toolbar">
-        <Button variant="contained" color="primary" onClick={getNewSurvivor}>Generate New Loadout</Button>
+        <Button className="btn-generate-survivor" variant="contained" color="primary" onClick={getNewSurvivor}>Generate New Loadout</Button>
         <Button variant="outlined" color="secondary" href="#/killer">To Killer Loadout</Button>
       </div>
       {survivorDetails && survivorDetails.item
