@@ -1,0 +1,29 @@
+.survivor {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding-bottom: 32px;
+
+  img {
+    max-width: 100%;
+    max-height: 140px;
+  }
+
+  & > * {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_name,
+  &_item,
+  &_addons,
+  &_perks {
+    grid-column: span 1;
+  }
+
+  &_perks {
+    grid-row-start: 2;
+  }
+}

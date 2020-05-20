@@ -19,19 +19,19 @@ export const toolbox: Addon[] = [
 ];
 
 export const medkit: Addon[] = [
-  { icon: 'abdominalDressing.png', name: 'Abdominal Dressin', rank: IRank.GREEN },
+  { icon: 'abdominalDressing.png', name: 'Abdominal Dressing', rank: IRank.GREEN },
   { icon: 'anti-haemorrhagicSyringe.png', name: 'Anti-Haemorrhagic Syringe', rank: IRank.IRIDESCANT },
   { icon: 'bandages.png', name: 'Bandage', rank: IRank.BROWN },
-  { icon: 'butterflyTape.png', name: 'Butterfly Tap', rank: IRank.BROWN },
-  { icon: 'gauzeRoll.png', name: 'Gauze Rol', rank: IRank.YELLOW },
+  { icon: 'butterflyTape.png', name: 'Butterfly Tape', rank: IRank.BROWN },
+  { icon: 'gauzeRoll.png', name: 'Gauze Roll', rank: IRank.YELLOW },
   { icon: 'gelDressings.png', name: 'Gel Dressing', rank: IRank.GREEN },
-  { icon: 'medicalScissors.png', name: 'Medical Scissor', rank: IRank.YELLOW },
-  { icon: 'needle&Thread.png', name: 'Needle & Threa', rank: IRank.YELLOW },
+  { icon: 'medicalScissors.png', name: 'Medical Scissors', rank: IRank.YELLOW },
+  { icon: 'needle&Thread.png', name: 'Needle & Thread', rank: IRank.YELLOW },
   { icon: 'rubberGloves.png', name: 'Rubber Glove', rank: IRank.BROWN },
-  { icon: 'selfAdherentWrap.png', name: 'Self Adherent Wra', rank: IRank.YELLOW },
-  { icon: 'sponge.png', name: 'Spong', rank: IRank.YELLOW },
-  { icon: 'stypticAgent.png', name: 'Styptic Agen', rank: IRank.PURPLE },
-  { icon: 'surgicalSuture.png', name: 'Surgical Sutur', rank: IRank.GREEN },
+  { icon: 'selfAdherentWrap.png', name: 'Self Adherent Wrap', rank: IRank.YELLOW },
+  { icon: 'sponge.png', name: 'Sponge', rank: IRank.YELLOW },
+  { icon: 'stypticAgent.png', name: 'Styptic Agent', rank: IRank.PURPLE },
+  { icon: 'surgicalSuture.png', name: 'Surgical Suture', rank: IRank.GREEN },
 ];
 
 export const map: Addon[] = [

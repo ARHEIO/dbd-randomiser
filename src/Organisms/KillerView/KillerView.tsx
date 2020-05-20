@@ -1,5 +1,6 @@
 import React, { useEffect, useState, ReactElement } from 'react';
 import './KillerView.scss';
+import { Button } from '@material-ui/core';
 import { generateKiller, GeneratedKiller } from '../../Services/generator/generate';
 import KillerPanel from '../../Molecules/KillerPanel/KillerPanel';
 import Spinner from '../../Atoms/Spinner/Spinner';
@@ -20,7 +21,10 @@ const KillerView = (): ReactElement => {
   return (
     <div className="killer-container">
       <h2>Killer</h2>
-      <button type="button" className="btn-generate-killer" onClick={getNewKiller}>Generate</button>
+      <div className="killer-toolbar">
+        <Button variant="contained" color="primary" onClick={getNewKiller}>Generate New Loadout</Button>
+        <Button variant="outlined" color="secondary" href="#/survivor">To Survivor Loadout</Button>
+      </div>
       { killerDetails && killerDetails.name
         ? <KillerPanel killer={killerDetails} />
         : <Spinner />}
