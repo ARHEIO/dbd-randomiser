@@ -2,17 +2,13 @@
 
 exports[`Search View should render when no addons are passed 1`] = `
 "<div class=\\"survivor\\">
-  <div class=\\"survivor_name\\">
-    <div class=\\"square-icon\\">
-      <p class=\\"square-icon_name\\">Adam</p>
-      <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(97, 81, 60);\\"><img alt=\\"Adam\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/adam.png\\"></div>
-    </div>
+  <div class=\\"square-icon\\">
+    <p class=\\"square-icon_name\\">Adam</p>
+    <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(97, 81, 60);\\"><img alt=\\"Adam\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/adam.png\\"></div>
   </div>
-  <div class=\\"survivor_item\\">
-    <div class=\\"square-icon\\">
-      <p class=\\"square-icon_name\\">MacBook Pro 2018</p>
-      <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"MacBook Pro 2018\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
-    </div>
+  <div class=\\"square-icon\\">
+    <p class=\\"square-icon_name\\">MacBook Pro 2018</p>
+    <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"MacBook Pro 2018\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
   </div>
   <div style=\\"grid-column: span 2;\\"></div>
   <div class=\\"diamond-icon\\">
@@ -36,17 +32,13 @@ exports[`Search View should render when no addons are passed 1`] = `
 
 exports[`Search View should render when the default object is passed 1`] = `
 "<div class=\\"survivor\\">
-  <div class=\\"survivor_name\\">
-    <div class=\\"square-icon\\">
-      <p class=\\"square-icon_name\\">Adam</p>
-      <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(97, 81, 60);\\"><img alt=\\"Adam\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/adam.png\\"></div>
-    </div>
+  <div class=\\"square-icon\\">
+    <p class=\\"square-icon_name\\">Adam</p>
+    <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(97, 81, 60);\\"><img alt=\\"Adam\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/adam.png\\"></div>
   </div>
-  <div class=\\"survivor_item\\">
-    <div class=\\"square-icon\\">
-      <p class=\\"square-icon_name\\">MacBook Pro 2018</p>
-      <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"MacBook Pro 2018\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
-    </div>
+  <div class=\\"square-icon\\">
+    <p class=\\"square-icon_name\\">MacBook Pro 2018</p>
+    <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"MacBook Pro 2018\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
   </div>
   <div class=\\"square-icon\\">
     <p class=\\"square-icon_name\\">Evoluent Vertical Mouse 4</p>

@@ -2,11 +2,9 @@
 
 exports[`Search View should render when the default object is passed 1`] = `
 "<div class=\\"killer\\">
-  <div class=\\"killer_name\\">
-    <div class=\\"square-icon\\">
-      <p class=\\"square-icon_name\\">Adam</p>
-      <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(97, 81, 60);\\"><img alt=\\"Adam\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/adam.png\\"></div>
-    </div>
+  <div class=\\"square-icon\\">
+    <p class=\\"square-icon_name\\">Adam</p>
+    <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(97, 81, 60);\\"><img alt=\\"Adam\\" src=\\"https://dqr3pglopijar.cloudfront.net/assets/adam.png\\"></div>
   </div>
   <div class=\\"square-icon\\">
     <p class=\\"square-icon_name\\">Evoluent Vertical Mouse 4</p>
