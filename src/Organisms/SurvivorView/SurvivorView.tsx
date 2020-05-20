@@ -1,5 +1,6 @@
 import React, { useState, useEffect, ReactElement } from 'react';
 import './SurvivorView.scss';
+import { Button } from '@material-ui/core';
 import { generateSurvivor, GeneratedSurvivor } from '../../Services/generator/generate';
 import SurvivorPanel from '../../Molecules/SurvivorPanel/SurvivorPanel';
 import Spinner from '../../Atoms/Spinner/Spinner';
@@ -19,8 +20,10 @@ const SurvivorView = (): ReactElement => {
   return (
     <div className="survivor-container">
       <h2>Survivor</h2>
-      <button type="button" className="btn-generate-survivor" onClick={getNewSurvivor}>Generate</button>
-
+      <div className="survivor-toolbar">
+        <Button className="btn-generate-survivor" variant="contained" color="primary" onClick={getNewSurvivor}>Generate New Loadout</Button>
+        <Button variant="outlined" color="secondary" href="#/killer">To Killer Loadout</Button>
+      </div>
       {survivorDetails && survivorDetails.item
         ? <SurvivorPanel survivor={survivorDetails} />
         : <Spinner />}

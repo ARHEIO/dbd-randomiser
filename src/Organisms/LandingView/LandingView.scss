@@ -1,38 +1,41 @@
 .landing-container {
   display: grid;
+  grid-gap: 32px;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
-  grid-gap: 32px;
 }
+
 .link-button {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  background: #1f2020;
   border: 1px solid;
   border-radius: 0;
-  line-height: 1.1;
-  color: #ffffff;
+  width: 100%;
   font-family: Quicksand,sans-serif;
   font-stretch: condensed;
   font-weight: 400;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 10px hsla(0,0%,100%,.25), -1px -1px 10px hsla(0,0%,100%,.25);
-  text-transform: uppercase;
+  line-height: 1.1;
   text-decoration: none;
+  text-shadow: 1px 1px 10px hsla(0, 0%, 100%, 0.25), -1px -1px 10px hsla(0, 0%, 100%, 0.25);
+  text-transform: uppercase;
+  background: #1F2020;
+  color: #FFFFFF;
   cursor: pointer;
 
   &:hover {
-    background-color: lighten(#1f2020, 5%);
+    background-color: lighten(#1F2020, 5%);
   }
+
   &:active {
-    border-color:  darken(#ffffff, 5%);
-    background-color: darken(#1f2020, 5%);
+    border-color: darken(#FFFFFF, 5%);
+    background-color: darken(#1F2020, 5%);
   }
+
   &:focus {
-    outline: 1px dotted darken(#1f2020, 5%);
+    outline: 1px dotted darken(#1F2020, 5%);
     outline-offset: 2px;
   }
 }

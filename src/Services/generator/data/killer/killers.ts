@@ -53,10 +53,10 @@ export const killers: Killer[] = [
   {
     name: 'The Wraith', upgradables: killerAddons.Wraith, icon: 'assets/killer/portrait/WR_charSelect_portrait.png', rank: null,
   },
-  {
-    name: 'The Spirit', upgradables: killerAddons.Spirit, icon: 'assets/killer/portrait/HK_charSelect_portrait.png', rank: null,
-  },
-  {
-    name: 'The Oni', upgradables: killerAddons.Oni, icon: 'assets/killer/portrait/SK_charSelect_portrait.png', rank: null,
-  },
+  // {
+  //   name: 'The Spirit', upgradables: killerAddons.Spirit, icon: 'assets/killer/portrait/HK_charSelect_portrait.png', rank: null,
+  // },
+  // {
+  //   name: 'The Oni', upgradables: killerAddons.Oni, icon: 'assets/killer/portrait/SK_charSelect_portrait.png', rank: null,
+  // },
 ];

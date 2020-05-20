@@ -2,7 +2,8 @@
 
 exports[`Search View should render 1`] = `
 "<div class=\\"survivor-container\\">
-  <h2>Survivor</h2><button type=\\"button\\" class=\\"btn-generate-survivor\\">Generate</button>
+  <h2>Survivor</h2>
+  <div class=\\"survivor-toolbar\\"><button class=\\"MuiButtonBase-root MuiButton-root MuiButton-contained btn-generate-survivor MuiButton-containedPrimary\\" tabindex=\\"0\\" type=\\"button\\"><span class=\\"MuiButton-label\\">Generate New Loadout</span><span class=\\"MuiTouchRipple-root\\"></span></button><a class=\\"MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary\\" tabindex=\\"0\\" aria-disabled=\\"false\\" href=\\"#/killer\\"><span class=\\"MuiButton-label\\">To Killer Loadout</span><span class=\\"MuiTouchRipple-root\\"></span></a></div>
   <div class=\\"survivor loading-spinner-container\\">
     <div class=\\"loading-spinner\\"><svg class=\\"loading-spinner-rear\\">
         <circle cx=\\"50%\\" cy=\\"50%\\" r=\\"18px\\"></circle>
