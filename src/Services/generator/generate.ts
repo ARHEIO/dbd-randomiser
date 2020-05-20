@@ -26,7 +26,7 @@ export const generateKiller = (): Promise<GeneratedKiller> => new Promise((resol
       addons: selectedAddons,
       perks: selectedPerks,
     });
-  }, 1000);
+  }, 100);
 });
 
 export interface GeneratedSurvivor {
@@ -50,5 +50,5 @@ export const generateSurvivor = (): Promise<GeneratedSurvivor> => new Promise((r
       addons: selectedAddons,
       perks: selectedPerks,
     });
-  }, 1000);
+  }, 100);
 });
