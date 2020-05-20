@@ -1,9 +1,9 @@
 .survivor {
   display: grid;
   grid-gap: 16px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  padding-bottom: 32px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-bottom: 32px;
 
   img {
     max-width: 100%;
@@ -23,5 +23,10 @@
 
   &_perks {
     grid-row-start: 2;
+  }
+
+  @media (min-width: 960px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
