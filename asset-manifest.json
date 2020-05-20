@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dbd-randomiser/static/css/main.54f05ae6.chunk.css",
+    "main.css": "/dbd-randomiser/static/css/main.6ab854d6.chunk.css",
     "main.js": "/dbd-randomiser/static/js/main.7200ca5e.chunk.js",
     "main.js.map": "/dbd-randomiser/static/js/main.7200ca5e.chunk.js.map",
     "runtime-main.js": "/dbd-randomiser/static/js/runtime-main.0c31d329.js",
@@ -8,15 +8,15 @@
     "static/js/2.199a1c89.chunk.js": "/dbd-randomiser/static/js/2.199a1c89.chunk.js",
     "static/js/2.199a1c89.chunk.js.map": "/dbd-randomiser/static/js/2.199a1c89.chunk.js.map",
     "index.html": "/dbd-randomiser/index.html",
-    "precache-manifest.83fd495fc4864604d4522206236d19b6.js": "/dbd-randomiser/precache-manifest.83fd495fc4864604d4522206236d19b6.js",
+    "precache-manifest.ccaa7201b1085f1cfcfa1bb433d49a06.js": "/dbd-randomiser/precache-manifest.ccaa7201b1085f1cfcfa1bb433d49a06.js",
     "service-worker.js": "/dbd-randomiser/service-worker.js",
-    "static/css/main.54f05ae6.chunk.css.map": "/dbd-randomiser/static/css/main.54f05ae6.chunk.css.map",
+    "static/css/main.6ab854d6.chunk.css.map": "/dbd-randomiser/static/css/main.6ab854d6.chunk.css.map",
     "static/js/2.199a1c89.chunk.js.LICENSE.txt": "/dbd-randomiser/static/js/2.199a1c89.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0c31d329.js",
     "static/js/2.199a1c89.chunk.js",
-    "static/css/main.54f05ae6.chunk.css",
+    "static/css/main.6ab854d6.chunk.css",
     "static/js/main.7200ca5e.chunk.js"
   ]
 }
