@@ -1,8 +1,15 @@
 .landing-container {
   display: grid;
   grid-gap: 32px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   justify-items: center;
+  margin: 48px 8px;
+
+  @media (min-width: 960px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
 }
 
 .link-button {
