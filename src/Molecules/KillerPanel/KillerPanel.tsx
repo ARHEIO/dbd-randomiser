@@ -13,9 +13,7 @@ const KillerPanel = (props: { killer: GeneratedKiller }): ReactElement => {
   } = props;
   return (
     <div className="killer">
-      <div className="killer_name">
-        <SquareIcon name={killer.name} icon={killer.icon} rank={null} />
-      </div>
+      <SquareIcon name={killer.name} icon={killer.icon} rank={null} />
       {killer.addons.map((addon: any) => (
         <SquareIcon key={addon.name} name={addon.name} icon={addon.icon} rank={addon.rank} />
       ))}

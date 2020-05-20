@@ -14,17 +14,11 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    grid-column: span 1;
     justify-self: center;
     border-bottom: 2px solid #FF2A2B;
     padding-bottom: 16px;
     max-width: 160px;
-  }
-
-  &_name,
-  &_item,
-  &_addons,
-  &_perks {
-    grid-column: span 1;
   }
 
   &_perks {

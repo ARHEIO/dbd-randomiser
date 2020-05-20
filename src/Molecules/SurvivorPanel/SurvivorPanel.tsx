@@ -11,12 +11,8 @@ const SurvivorPanel = (props: {survivor: GeneratedSurvivor}): ReactElement => {
   const { survivor } = props;
   return (
     <div className="survivor">
-      <div className="survivor_name">
-        <SquareIcon name={survivor.name} icon={survivor.icon} rank={null} />
-      </div>
-      <div className="survivor_item">
-        <SquareIcon name={survivor.item.name} icon={survivor.item.icon} rank={survivor.item.rank} />
-      </div>
+      <SquareIcon name={survivor.name} icon={survivor.icon} rank={null} />
+      <SquareIcon name={survivor.item.name} icon={survivor.item.icon} rank={survivor.item.rank} />
       {survivor.addons.length > 0
         ? survivor.addons.map((addon: any) => (
           <SquareIcon key={addon.name} name={addon.name} icon={addon.icon} rank={addon.rank} />
