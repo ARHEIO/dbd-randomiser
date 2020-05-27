@@ -1,20 +1,21 @@
 import React, { useState, useEffect, ReactElement } from 'react';
 import './SurvivorView.scss';
 import { Button } from '@material-ui/core';
-import { generateSurvivor, GeneratedSurvivor } from '../../Services/generator/generate';
+import { generateSurvivor } from '../../Services/generator/generate';
 import SurvivorPanel from '../../Molecules/SurvivorPanel/SurvivorPanel';
 import Spinner from '../../Atoms/Spinner/Spinner';
+import { GeneratedSurvivor } from '../../Services/generator/models';
 
 const SurvivorView = (): ReactElement => {
   const [survivorDetails, setSurvivorDetails] = useState<GeneratedSurvivor | null>(null);
 
   const getNewSurvivor = (): void => {
     setSurvivorDetails(null); // set loading state
-    generateSurvivor().then((survivor) => setSurvivorDetails(survivor));
+    generateSurvivor().then((response) => setSurvivorDetails(response.data));
   };
 
   useEffect(() => {
-    generateSurvivor().then((survivor) => setSurvivorDetails(survivor));
+    generateSurvivor().then((response) => setSurvivorDetails(response.data));
   }, []);
 
   return (

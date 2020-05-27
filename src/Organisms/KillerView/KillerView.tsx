@@ -1,9 +1,10 @@
 import React, { useEffect, useState, ReactElement } from 'react';
 import './KillerView.scss';
 import { Button } from '@material-ui/core';
-import { generateKiller, GeneratedKiller } from '../../Services/generator/generate';
+import { generateKiller } from '../../Services/generator/generate';
 import KillerPanel from '../../Molecules/KillerPanel/KillerPanel';
 import Spinner from '../../Atoms/Spinner/Spinner';
+import { GeneratedKiller } from '../../Services/generator/models';
 
 
 const KillerView = (): ReactElement => {
@@ -11,11 +12,11 @@ const KillerView = (): ReactElement => {
 
   const getNewKiller = (): void => {
     setKillerDetails(null); // set loading state
-    generateKiller().then((killer) => setKillerDetails(killer));
+    generateKiller().then((response) => setKillerDetails(response.data));
   };
 
   useEffect(() => {
-    generateKiller().then((killer) => setKillerDetails(killer));
+    generateKiller().then((response) => setKillerDetails(response.data));
   }, []);
 
   return (
