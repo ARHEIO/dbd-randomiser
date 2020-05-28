@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dbd-randomiser/static/css/main.e7e4b638.chunk.css",
-    "main.js": "/dbd-randomiser/static/js/main.bc9e99ca.chunk.js",
-    "main.js.map": "/dbd-randomiser/static/js/main.bc9e99ca.chunk.js.map",
+    "main.js": "/dbd-randomiser/static/js/main.35b55c8b.chunk.js",
+    "main.js.map": "/dbd-randomiser/static/js/main.35b55c8b.chunk.js.map",
     "runtime-main.js": "/dbd-randomiser/static/js/runtime-main.0c31d329.js",
     "runtime-main.js.map": "/dbd-randomiser/static/js/runtime-main.0c31d329.js.map",
     "static/js/2.b12c67f4.chunk.js": "/dbd-randomiser/static/js/2.b12c67f4.chunk.js",
     "static/js/2.b12c67f4.chunk.js.map": "/dbd-randomiser/static/js/2.b12c67f4.chunk.js.map",
     "index.html": "/dbd-randomiser/index.html",
-    "precache-manifest.34ec5c843892da38e390178778cb5e93.js": "/dbd-randomiser/precache-manifest.34ec5c843892da38e390178778cb5e93.js",
+    "precache-manifest.133d3c05ec6813a23f5483370a761168.js": "/dbd-randomiser/precache-manifest.133d3c05ec6813a23f5483370a761168.js",
     "service-worker.js": "/dbd-randomiser/service-worker.js",
     "static/css/main.e7e4b638.chunk.css.map": "/dbd-randomiser/static/css/main.e7e4b638.chunk.css.map",
     "static/js/2.b12c67f4.chunk.js.LICENSE.txt": "/dbd-randomiser/static/js/2.b12c67f4.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.0c31d329.js",
     "static/js/2.b12c67f4.chunk.js",
     "static/css/main.e7e4b638.chunk.css",
-    "static/js/main.bc9e99ca.chunk.js"
+    "static/js/main.35b55c8b.chunk.js"
   ]
 }
