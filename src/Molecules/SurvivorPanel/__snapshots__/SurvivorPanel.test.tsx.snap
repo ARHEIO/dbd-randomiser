@@ -10,7 +10,7 @@ exports[`Search View should render when no addons are passed 1`] = `
     <p class=\\"square-icon_name\\">MacBook Pro 2018</p>
     <div class=\\"square-icon_icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"MacBook Pro 2018\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
   </div>
-  <div style=\\"grid-column: span 2;\\"></div>
+  <div class=\\"firecracker-buffer\\"></div>
   <div class=\\"diamond-icon\\">
     <p class=\\"diamond-icon_name\\">Archetecture</p>
     <div class=\\"diamond-icon_icon\\" style=\\"background-color: rgb(255, 9, 85);\\"><img alt=\\"Archetecture\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>

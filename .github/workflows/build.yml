@@ -1,12 +1,12 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Release
+name: Build
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -22,10 +22,3 @@ jobs:
           npm run lint
           npm run test
           npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.

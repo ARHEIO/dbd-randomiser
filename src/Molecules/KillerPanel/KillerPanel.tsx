@@ -4,8 +4,7 @@ import './KillerPanel.scss';
 import DiamondIcon from '../../Atoms/DiamondIcon/DiamondIcon';
 import SquareIcon from '../../Atoms/SquareIcon/SquareIcon';
 
-import { Perk as IPerk } from '../../Services/generator/models';
-import { GeneratedKiller } from '../../Services/generator/generate';
+import { Perk as IPerk, GeneratedKiller } from '../../Services/generator/models';
 
 const KillerPanel = (props: { killer: GeneratedKiller }): ReactElement => {
   const {

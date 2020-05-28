@@ -5,20 +5,19 @@ import {
 } from '@testing-library/react';
 import pretty from 'pretty';
 import SurvivorPanel from './SurvivorPanel';
-import * as generators from '../../Services/generator/generate';
+import { GeneratedSurvivor } from '../../Services/generator/models';
 
-const defaultObject: generators.GeneratedSurvivor = {
+const defaultObject: GeneratedSurvivor = {
   name: 'Adam',
   icon: 'assets/adam.png',
-  addons: [
-    { icon: '', name: 'Evoluent Vertical Mouse 4', rank: 5 },
-    { icon: '', name: 'OLKB Preonic', rank: 5 },
-  ],
   item: {
+    addons: [
+      { icon: '', name: 'Evoluent Vertical Mouse 4', rank: 5 },
+      { icon: '', name: 'OLKB Preonic', rank: 5 },
+    ],
     name: 'MacBook Pro 2018',
     rank: 5,
     icon: '',
-    upgradables: [],
   },
   perks: [
     { icon: '', rank: 5, name: 'Archetecture' },
@@ -40,7 +39,7 @@ describe('Search View', () => {
 
   it('should render when no addons are passed', () => {
     const addonlessObject = defaultObject;
-    addonlessObject.addons = [];
+    addonlessObject.item.addons = [];
     const { container } = render(<SurvivorPanel survivor={addonlessObject} />);
     expect(pretty(container.innerHTML)).toMatchSnapshot();
   });

@@ -5,7 +5,7 @@ import {
 } from '@testing-library/react';
 import pretty from 'pretty';
 import SurvivorView from './SurvivorView';
-import * as generators from '../../Services/generator/generate';
+import * as generators from '../../Services/generator/generateLoadoutApi';
 
 jest.mock('../../Molecules/SurvivorPanel/SurvivorPanel', () => (): ReactElement => (<p>SurvivorPanel</p>));
 describe('Search View', () => {
