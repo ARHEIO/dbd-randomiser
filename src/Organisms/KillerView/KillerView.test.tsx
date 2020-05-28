@@ -5,7 +5,7 @@ import {
 import pretty from 'pretty';
 import KillerView from './KillerView';
 
-import * as generators from '../../Services/generator/generate';
+import * as generators from '../../Services/generator/generateLoadoutApi';
 
 jest.mock('../../Molecules/KillerPanel/KillerPanel', () => (): ReactElement => (<p>KillerPanel</p>));
 describe('Killer View', () => {

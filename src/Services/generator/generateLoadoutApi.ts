@@ -1,7 +1,5 @@
 import axios from 'axios';
-import {
-  GeneratedKiller, GeneratedSurvivor,
-} from './models';
+import { GeneratedKiller, GeneratedSurvivor } from './models';
 import config from '../../config';
 
 export const generateKiller = (): Promise<{data: GeneratedKiller}> => axios.get(`${config.endpoints.randomiserApi}/killer`);

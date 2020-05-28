@@ -1,7 +1,7 @@
 import React, { useState, useEffect, ReactElement } from 'react';
 import './SurvivorView.scss';
 import { Button } from '@material-ui/core';
-import { generateSurvivor } from '../../Services/generator/generate';
+import { generateSurvivor } from '../../Services/generator/generateLoadoutApi';
 import SurvivorPanel from '../../Molecules/SurvivorPanel/SurvivorPanel';
 import Spinner from '../../Atoms/Spinner/Spinner';
 import { GeneratedSurvivor } from '../../Services/generator/models';

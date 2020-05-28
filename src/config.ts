@@ -1,5 +1,5 @@
 export default {
   endpoints: {
-    randomiserApi: 'https://dev-api.arhe.io/dbd-randomiser',
+    randomiserApi: process.env.REACT_APP_RANDOMISER_SERVER_ENDPOINT,
   },
 };

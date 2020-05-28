@@ -1,7 +1,7 @@
 import React, { useEffect, useState, ReactElement } from 'react';
 import './KillerView.scss';
 import { Button } from '@material-ui/core';
-import { generateKiller } from '../../Services/generator/generate';
+import { generateKiller } from '../../Services/generator/generateLoadoutApi';
 import KillerPanel from '../../Molecules/KillerPanel/KillerPanel';
 import Spinner from '../../Atoms/Spinner/Spinner';
 import { GeneratedKiller } from '../../Services/generator/models';

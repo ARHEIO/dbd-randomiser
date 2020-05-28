@@ -3,7 +3,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import pretty from 'pretty';
 import KillerPanel from './KillerPanel';
-import * as generators from '../../Services/generator/generate';
+import * as generators from '../../Services/generator/generateLoadoutApi';
 
 const defaultObject: generators.GeneratedKiller = {
   name: 'Adam',
