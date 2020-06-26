@@ -34,6 +34,11 @@ const theme: Theme = createMuiTheme({
         },
       },
     },
+    MuiDrawer: {
+      paper: {
+        backgroundColor: '#1F2020',
+      },
+    },
   },
 });
 

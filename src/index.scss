@@ -23,3 +23,9 @@ code {
     'Courier New',
     monospace;
 }
+
+h2,
+p {
+  text-shadow: 1px 1px 10px hsla(0, 0%, 100%, 0.25), -1px -1px 10px hsla(0, 0%, 100%, 0.25);
+  color: #FFFFFF;
+}

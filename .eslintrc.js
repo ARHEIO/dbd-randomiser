@@ -26,6 +26,7 @@ module.exports = {
     'import/no-extraneous-dependencies': [2, { devDependencies: ['**/test.tsx', '**/test.ts'] }],
     '@typescript-eslint/indent': [2, 2],
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/interface-name-prefix': 'off',
     'import/extensions': 'off',
     'max-len': [2, { code: 140 }],
   },

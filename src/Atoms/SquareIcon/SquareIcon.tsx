@@ -2,6 +2,7 @@ import React, { ReactElement } from 'react';
 import './SquareIcon.scss';
 import colourConfig from '../color-config';
 import { BasicObject } from '../../Services/generator/models';
+import getAssetLocation from '../../Services/utils';
 
 // TODO: Find a way to have a placeholder spinner component for the image
 
@@ -13,7 +14,7 @@ const SquareIcon = (props: BasicObject): ReactElement => {
     <div className="square-icon">
       <p className="square-icon_name">{name}</p>
       <div className="square-icon_icon" style={{ backgroundColor: backgroundcolor }}>
-        <img alt={name} src={`https://dqr3pglopijar.cloudfront.net/${icon}`} />
+        <img alt={name} src={getAssetLocation(icon)} />
       </div>
     </div>
   );

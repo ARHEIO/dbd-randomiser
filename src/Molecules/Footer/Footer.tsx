@@ -4,7 +4,7 @@ import './Footer.scss';
 const Footer = (): ReactElement => (
   <footer className="app-footer">
     <p>
-      Credit to icons goes to u/thatpikminguy on Reddit. Grab the icon set yourself on
+      Credit to icons goes to u/thatpikminguy on Reddit. Grab the icon set yourself on &nbsp;
       <a
         href="https://www.reddit.com/r/PerkByDaylight/comments/fhqoux/the_shitty_ui_pack_13_chains_of_hate_doctor/"
         target="_blank"
