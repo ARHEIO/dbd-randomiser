@@ -13,7 +13,7 @@ const DiamondIcon = (props: BasicObject): ReactElement => {
     <div className="diamond-icon">
       <p className="diamond-icon_name">{name}</p>
       <div className="diamond-icon_icon" style={{ backgroundColor: backgroundcolor }}>
-        <img alt={name} src={`${config.endpoints.assets}/default/${icon}`} />
+        <img alt={name} src={`${config.endpoints.assets}/shitty/${icon}`} />
       </div>
     </div>
   );

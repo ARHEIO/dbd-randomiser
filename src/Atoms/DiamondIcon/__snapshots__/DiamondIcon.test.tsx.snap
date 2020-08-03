@@ -3,13 +3,13 @@
 exports[`Diamond Icon should render even when rank is null 1`] = `
 "<div class=\\"diamond-icon\\">
   <p class=\\"diamond-icon_name\\">Adam</p>
-  <div class=\\"diamond-icon_icon\\" style=\\"background-color: rgb(97, 81, 60);\\"><img alt=\\"Adam\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
+  <div class=\\"diamond-icon_icon\\" style=\\"background-color: rgb(97, 81, 60);\\"><img alt=\\"Adam\\" src=\\"https://assets.arhe.io/dbd-randomiser/shitty/\\"></div>
 </div>"
 `;
 
 exports[`Diamond Icon should render when the default object is passed 1`] = `
 "<div class=\\"diamond-icon\\">
   <p class=\\"diamond-icon_name\\">Adam</p>
-  <div class=\\"diamond-icon_icon\\" style=\\"background-color: rgb(171, 113, 60);\\"><img alt=\\"Adam\\" src=\\"https://dqr3pglopijar.cloudfront.net/\\"></div>
+  <div class=\\"diamond-icon_icon\\" style=\\"background-color: rgb(171, 113, 60);\\"><img alt=\\"Adam\\" src=\\"https://assets.arhe.io/dbd-randomiser/shitty/\\"></div>
 </div>"
 `;
