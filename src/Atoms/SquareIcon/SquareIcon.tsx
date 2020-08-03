@@ -13,7 +13,7 @@ const SquareIcon = (props: BasicObject): ReactElement => {
     <div className="square-icon">
       <p className="square-icon_name">{name}</p>
       <div className="square-icon_icon" style={{ backgroundColor: backgroundcolor }}>
-        <img alt={name} src={`${config.endpoints.assets}/default/${icon}`} />
+        <img alt={name} src={`${config.endpoints.assets}/shitty/${icon}`} />
       </div>
     </div>
   );
