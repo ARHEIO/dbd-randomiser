@@ -5,13 +5,9 @@ const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path')
 const debug = process.env.NODE_ENV !== 'production'
 
-const withTM = require('next-transpile-modules')(['precise-ui']);
-
-module.exports =
-// withTM(
-  {
-  assetPrefix: !debug ? '/Next-gh-page-example/' : '',
-  webpack: (config, { dev, isServer }) => {
+module.exports = {
+  assetPrefix: !debug ? '' : '',
+  webpack: (config, { isServer }) => {
     if (isServer) {
       return config;
     }
@@ -29,5 +25,4 @@ module.exports =
 
     return config;
   }
-}
-// )
+};
