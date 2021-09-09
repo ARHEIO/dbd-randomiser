@@ -5,14 +5,17 @@ const CopyPlugin = require("copy-webpack-plugin");
 const path = require('path')
 const debug = process.env.NODE_ENV !== 'production'
 
-module.exports = {
+const withTM = require('next-transpile-modules')(['precise-ui']);
+
+module.exports =
+// withTM(
+  {
   assetPrefix: !debug ? '/Next-gh-page-example/' : '',
-  webpack: (config, { dev, isServer}) => {
+  webpack: (config, { dev, isServer }) => {
     if (isServer) {
       return config;
     }
 
-    console.log('%c%s', 'color: #00a3cc', 'asdfasdf');
     config.plugins.push(
       new CopyPlugin({
         patterns: [
@@ -27,3 +30,4 @@ module.exports = {
     return config;
   }
 }
+// )

@@ -8,10 +8,12 @@
     "deploy": "./ops/deploy.sh"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
     "arheio.github.io.wiki": "https://github.com/ARHEIO/arheio.github.io.wiki.git",
     "fs-extra": "^10.0.0",
     "gray-matter": "^4.0.3",
     "next": "latest",
+    "next-transpile-modules": "^8.0.0",
     "precise-ui": "^1.6.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

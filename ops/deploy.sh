@@ -6,5 +6,3 @@ yarn build
 yarn export
 
 touch ./out/.nojekyll
-
-git add ./out/

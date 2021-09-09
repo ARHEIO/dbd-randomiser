@@ -14,7 +14,7 @@ const Docs: React.VFC<{slugs: string[]}> = ({slugs}) => {
   return (
     <Box width={[0.8, 0.8, 0.65]} mx='auto'>
       <ul>
-        {slugs.map(slug => <DocLink slug={slug} />) }
+        {slugs && slugs.map(slug => <DocLink slug={slug} />) }
       </ul>
     </Box>
   );

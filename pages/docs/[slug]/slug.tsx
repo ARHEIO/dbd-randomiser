@@ -1,7 +1,6 @@
-import { useRouter } from 'next/dist/client/router';
-import { BreadcrumbProps, PageHead } from 'precise-ui/dist/es6';
 import React from 'react';
-import { Grid, GridArea } from 'precise-ui';
+import { useRouter } from 'next/dist/client/router';
+import { Grid, Paper } from '@material-ui/core'
 
 const useBreadcrumbsGenerator = () => {
   const home = { title: 'Home', href: '/' };
@@ -9,7 +8,7 @@ const useBreadcrumbsGenerator = () => {
     'docs': { title: 'Docs', href: '/docs' }
   }
   const { asPath } = useRouter();
-  return asPath.split('/').slice(1, -1).reduce((acc: BreadcrumbProps[], page: string) => [...acc, pathMap[page]], [home]);
+  return asPath.split('/').slice(1, -1).reduce((acc: [], page: string) => [...acc, pathMap[page]], [home]);
 }
 
 type SlugProps = {
@@ -21,18 +20,21 @@ type SlugProps = {
 const Slug: React.VFC<SlugProps> = ({slug, content, postData}) => {
   const breadybois = useBreadcrumbsGenerator();
 
-  const title = postData?.title as string || slug;
-
   return (
     <main>
-      <Grid columns={['1fr', '65%', '1fr']} rows={['fit-content', 'auto']}>
-        <div style={{backgroundColor: 'rebeccapurple', columnSpan: 'all'}}></div>
-        <GridArea column={1}>
-          <PageHead title={title} breadcrumbs={breadybois} />
-        </GridArea>
-        <GridArea column={1}>
+      <Grid container spacing={3}>
+        <Grid item xs={2} />
+        <Grid item xs={8}>
+          {breadybois.length > 0 && breadybois.map(boi => <p>{boi?.title}</p>)}
+        </Grid>
+        <Grid item xs={2} />
+      </Grid>
+      <Grid container spacing={3}>
+        <Grid item xs={2} />
+        <Grid item xs={8}>
           <div dangerouslySetInnerHTML={{ __html: content }} />
-        </GridArea>
+        </Grid>
+        <Grid item xs={2} />
       </Grid>
     </main>
   )
