@@ -1,0 +1,18 @@
+.squareIcon {
+  justify-self: center;
+}
+
+.squareIconName {
+  min-height: 36px;
+  text-align: center;
+}
+
+.squareIconIcon {
+  border: 10px solid #000000;
+  width: 75%;
+
+  &::after {
+    display: block;
+    content: '';
+  }
+}

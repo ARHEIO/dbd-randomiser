@@ -1,0 +1,22 @@
+.diamondIconName {
+  min-height: 36px;
+  text-align: center;
+}
+
+.diamondIconIcon {
+  margin-top: 20px;
+  border: 8px solid #000000;
+  width: 100px;
+  height: 100px;
+  transform: rotateY(0deg) rotate(45.5deg);
+  background-color: rgb(172, 62, 227);
+
+  img {
+    transform: rotateY(0deg) rotate(-45.5deg);
+  }
+
+  &::after {
+    display: block;
+    content: '';
+  }
+}

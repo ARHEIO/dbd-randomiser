@@ -1,5 +1,8 @@
 {
+  "name": "dbd-randomiser",
+  "version": "3.0.0",
   "private": true,
+  "homepage": "https://arhe.io/dbd-randomiser/",
   "scripts": {
     "dev": "next",
     "start": "next start",
@@ -9,9 +12,7 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
-    "arheio.github.io.wiki": "https://github.com/ARHEIO/arheio.github.io.wiki.git",
-    "fs-extra": "^10.0.0",
-    "gray-matter": "^4.0.3",
+    "@stephenpoole/deadbydaylight": "^5.2.2",
     "next": "latest",
     "next-transpile-modules": "^8.0.0",
     "precise-ui": "^1.6.3",
@@ -19,6 +20,7 @@
     "react-dom": "^17.0.2",
     "remark": "^14.0.1",
     "remark-html": "^14.0.1",
+    "sass": "^1.42.1",
     "styled-components": "^5.3.1"
   },
   "devDependencies": {
@@ -27,8 +29,6 @@
     "@types/rebass": "^4.0.9",
     "babel-plugin-transform-define": "^1.3.0",
     "copy-webpack-plugin": "^9.0.1",
-    "emotion-theming": "^11.0.0",
-    "rebass": "^4.0.7",
     "typescript": "^4.4.2"
   }
 }
